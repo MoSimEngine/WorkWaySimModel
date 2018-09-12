@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModularSimulationAssembly:SimulationAssembly xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:AdaptationDescriptions="edu.kit.ipd.sdq.Modularization.Adaptation.AdaptationDescriptions" xmlns:AdapterServices="edu.kit.ipd.sdq.Modularization.Adaptation.AdapterServices" xmlns:AnnotationEnhancement="edu.kit.ipd.sdq.Modularization.Assembly.AnnotationEnhancement" xmlns:Annotations="edu.kit.ipd.sdq.Modularization.Annotations" xmlns:AssemblyComponentWiring="edu.kit.ipd.sdq.Modularization.Assembly.AssemblyConnections.ComponentWiring" xmlns:AssemblyConnections="edu.kit.ipd.sdq.Modularization.Assembly.AssemblyConnections" xmlns:DataTypes="edu.kit.ipd.sdq.Modularization.DataRepresentation.DataTypes" xmlns:InterfaceConnection="edu.kit.ipd.sdq.Modularization.Assembly.AssemblyConnections.ComponentInterfaceConnection" xmlns:InterfaceMapping="edu.kit.ipd.sdq.Modularization.Assembly.AssemblyInterface.InterfaceMapping" xmlns:ModularEnvironment="edu.kit.ipd.sdq.Modularization.ModularEnvironment" xmlns:ModularSimulationAssembly="edu.kit.ipd.sdq.Modularization.Assembly" xmlns:SimulationInformation="edu.kit.ipd.sdq.Modularization.DataRepresentation.SimulationInformation" id="_lkkBgJ67EeiQXuhq8OvXXA" Name="HumanSim" semantics="This simulation provides a simulation of the way to work for a human and the covering of the distance partially by bus or walking the whole distance. The taking of the bus includes a interaction with a simulation of a bus moving between the stations of a bus station system">
+  <connection xsi:type="AssemblyComponentWiring:SimulationFeature_MSEWiring" id="_CS398aU8EeiuNYKvMwv4lw" Name="poRTIco_HumanSimWiring" coordinator="_FX4O4J7MEei-mtJnAA73Zg" simulationcomponentconnector="_LU5Q0J7VEei-mtJnAA73Zg" coordinatorcomponentconnector="_KzAEsZ7VEei-mtJnAA73Zg" simulation="_JvXMjp7MEei-mtJnAA73Zg"/>
+  <connection xsi:type="AssemblyComponentWiring:SimulationFeature_MSEWiring" id="_HOvbAaU8EeiuNYKvMwv4lw" Name="poRTIco_BusSimWiring" coordinator="_FX4O4J7MEei-mtJnAA73Zg" simulationcomponentconnector="_GJ3WYJ7VEei-mtJnAA73Zg" coordinatorcomponentconnector="_KzAEsZ7VEei-mtJnAA73Zg" simulation="_99X_dp67EeiQXuhq8OvXXA"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_M2QddLTwEei3Qp4k_Gz5nw" Name="HumanCollectedConnection" providingComponent="_99X_dp67EeiQXuhq8OvXXA" requieringComponent="_JvXMjp7MEei-mtJnAA73Zg" interfaceprovided="_3qQuuZ7TEei-mtJnAA73Zg" interfacerequired="_8PgmGJ7UEei-mtJnAA73Zg"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_NaBR1LTwEei3Qp4k_Gz5nw" Name="HumanAttributeConnection" providingComponent="_JvXMjp7MEei-mtJnAA73Zg" requieringComponent="_99X_dp67EeiQXuhq8OvXXA" interfaceprovided="_0Af9SZ7UEei-mtJnAA73Zg" interfacerequired="_CuUSCJ7UEei-mtJnAA73Zg"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_OOxIhLTwEei3Qp4k_Gz5nw" Name="BusStopAttributeConnection" providingComponent="_99X_dp67EeiQXuhq8OvXXA" requieringComponent="_JvXMjp7MEei-mtJnAA73Zg" interfaceprovided="_jIO1GZ7TEei-mtJnAA73Zg" interfacerequired="_UllOiJ7UEei-mtJnAA73Zg"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_O7BKhLTwEei3Qp4k_Gz5nw" Name="BusStopRegistrationOpConnection" providingComponent="_JvXMjp7MEei-mtJnAA73Zg" requieringComponent="_99X_dp67EeiQXuhq8OvXXA" interfaceprovided="_kaIsaZ7UEei-mtJnAA73Zg" interfacerequired="_LUn1-J7TEei-mtJnAA73Zg"/>
+  <assembablecomponent xsi:type="ModularSimulationAssembly:SimulationFeatureComponent" id="_99X_dp67EeiQXuhq8OvXXA" Name="BusSimComponent" semantics="This Simulation simulates a bus driving between busstops and picking up and dropping off passengers">
+    <componentconnector xsi:type="AssemblyConnections:SimulationComponentConnector" id="_GJ3WYJ7VEei-mtJnAA73Zg" Name="BusSimFederateConnector">
+      <mseserviceinterface href="poRTIco.modularenvironment#_JV7tgpCiEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_h7aq8pChEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_bJF7MpCkEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_WRmLUpClEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_ExhKUpCmEeizmvAWlfhMkw"/>
+    </componentconnector>
+    <adapterservice xsi:type="AdapterServices:StructuralAdapter" id="_I6hV4J_iEeiSooqd12hbJw" Name="HLAAdapter_BS"/>
+    <adapterdescriptionattachment adapterservice="_I6hV4J_iEeiSooqd12hbJw">
+      <adaptationmarkermapping>
+        <datamarker href="WorkwaySimAdaptation.adaptation#_WrdrqqXUEeinHcG4teijng"/>
+        <adaptable xsi:type="DataTypes:DataTypeCollection" href="BusSim.simulationfeature#_Rh9QVJ_jEeiBSr1jVNFitg"/>
+        <adaptable xsi:type="DataTypes:DataTypeCollection" href="poRTIco.modularenvironment#_SddKoo9NEeijo84HWAGaqg"/>
+        <adaptable xsi:type="DataTypes:DataTypeCollection" href="HumanSim.simulationfeature#_jr42dKVPEeiuNYKvMwv4lw"/>
+      </adaptationmarkermapping>
+      <adaptationmarkermapping>
+        <datamarker href="WorkwaySimAdaptation.adaptation#_fqkUqqXUEeinHcG4teijng"/>
+        <adaptable xsi:type="DataTypes:BaseDataType" href="BusSim.simulationfeature#_b8YgoZPWEeiwmfKwDOAOcQ"/>
+        <adaptable xsi:type="DataTypes:BaseDataType" href="poRTIco.modularenvironment#_wPPbYY8sEeirK4EdHqw1RA"/>
+        <adaptable xsi:type="DataTypes:BaseDataType" href="HumanSim.simulationfeature#_Oyw70ZPSEeiM77OeRpXYzQ"/>
+      </adaptationmarkermapping>
+      <adaptationmarkermapping/>
+      <adaptationdescription xsi:type="AdaptationDescriptions:BaseconnectedAdaptation" href="WorkwaySimAdaptation.adaptation#_lW6MaaXUEeinHcG4teijng"/>
+      <adaptationdefinitionrepository href="WorkwaySimAdaptation.adaptation#_T8ZdUKXUEeinHcG4teijng"/>
+    </adapterdescriptionattachment>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_LUn1-J7TEei-mtJnAA73Zg" simulationcomonent="_99X_dp67EeiQXuhq8OvXXA">
+      <assemblyinterface href="WorkwaySimInterfaces.interfacedefinition#_42S74Z5CEeiCC7bRkv877Q"/>
+      <requieringOperationMapping annotatedoperation="_UGCXVJ7KEei-mtJnAA73Zg">
+        <parameter_interface_mapping annotatedparameter="_cZj3SJ7LEei-mtJnAA73Zg">
+          <interfaceparameter href="WorkwaySimInterfaces.interfacedefinition#_Q9qkgJ5DEeiCC7bRkv877Q"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_m5Ip9J7KEei-mtJnAA73Zg">
+          <interfaceparameter href="WorkwaySimInterfaces.interfacedefinition#_L66cUJ5DEeiCC7bRkv877Q"/>
+        </parameter_interface_mapping>
+        <interfaceoperation href="WorkwaySimInterfaces.interfacedefinition#_0b2ksaX0EeioWteD-iW6lA"/>
+      </requieringOperationMapping>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_jIO1GZ7TEei-mtJnAA73Zg" simulationcomonent="_99X_dp67EeiQXuhq8OvXXA">
+      <assemblyinterface href="WorkwaySimInterfaces.interfacedefinition#_sqnpMZ5CEeiCC7bRkv877Q"/>
+      <providinginterfaceobjectclassmapping additionenchancedobjectclass="_PeNGBp7JEei-mtJnAA73Zg">
+        <data_interface_mapping annotateddata="_TDrX5Z7JEei-mtJnAA73Zg">
+          <interfacedata href="WorkwaySimInterfaces.interfacedefinition#_yuRNsJ5CEeiCC7bRkv877Q"/>
+        </data_interface_mapping>
+        <interfaceobjectclass href="WorkwaySimInterfaces.interfacedefinition#_ve4gkJ5CEeiCC7bRkv877Q"/>
+      </providinginterfaceobjectclassmapping>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_3qQuuZ7TEei-mtJnAA73Zg" simulationcomonent="_99X_dp67EeiQXuhq8OvXXA">
+      <assemblyinterface href="WorkwaySimInterfaces.interfacedefinition#_DJIRcKX1EeioWteD-iW6lA"/>
+      <providinginterfaceobjectclassmapping additionenchancedobjectclass="_IA3BIJ69EeicX9KAciGrTg">
+        <data_interface_mapping annotateddata="_zt_dgZ6_Eeiv8JFR-bpYNA">
+          <interfacedata href="WorkwaySimInterfaces.interfacedefinition#_GjQ2AKX1EeioWteD-iW6lA"/>
+        </data_interface_mapping>
+        <interfaceobjectclass href="WorkwaySimInterfaces.interfacedefinition#_EwbmcKX1EeioWteD-iW6lA"/>
+      </providinginterfaceobjectclassmapping>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_CuUSCJ7UEei-mtJnAA73Zg" simulationcomonent="_99X_dp67EeiQXuhq8OvXXA">
+      <assemblyinterface href="WorkwaySimInterfaces.interfacedefinition#_6XkW0J5BEeiCC7bRkv877Q"/>
+      <requieringinterfaceobjectclassmapping annotatedobjectclass="_IA3BIJ69EeicX9KAciGrTg">
+        <data_interface_mapping annotateddata="_uAsjgZ6_Eeiv8JFR-bpYNA">
+          <interfacedata href="WorkwaySimInterfaces.interfacedefinition#_hLDOkJ5CEeiCC7bRkv877Q"/>
+        </data_interface_mapping>
+        <data_interface_mapping annotateddata="_34JmQZ6-EeiRjpdoptVK5A">
+          <interfacedata href="WorkwaySimInterfaces.interfacedefinition#_UktZIJ5CEeiCC7bRkv877Q"/>
+        </data_interface_mapping>
+        <requireddataentry xsi:type="SimulationInformation:ReferencingRequiredOOEntry" href="BusSim.simulationfeature#_urNPop48EeicjIM4r8s6LQ"/>
+        <interfaceobjectclass href="WorkwaySimInterfaces.interfacedefinition#_FtUHEJ5CEeiCC7bRkv877Q"/>
+      </requieringinterfaceobjectclassmapping>
+    </interfacemapping>
+    <annotationenhancedinformation xsi:type="AnnotationEnhancement:OOAnnotationEnhancedInformation">
+      <additionenchancedobjectclass id="_IA3BIJ69EeicX9KAciGrTg" Name="Human_BS">
+        <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_DLqP8J7BEeiLeZedBpDMew" Name="Sharing">
+          <selectedValues href="poRTIco.modularenvironment#_sce9oI87EeimvNDjScjahQ"/>
+          <selectedValues href="poRTIco.modularenvironment#_s9jDUI87EeimvNDjScjahQ"/>
+          <multiplesettableannotation href="poRTIco.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+        </annotationsetter>
+        <annotationinterface href="poRTIco.modularenvironment#_0J-CMI9FEeijo84HWAGaqg"/>
+        <additionenhanceddata id="_34JmQZ6-EeiRjpdoptVK5A" Name="HumanName_BS" semantics="">
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_DLvIcJ7BEeiLeZedBpDMew" Name="Sharing_HN_BS">
+            <selectedValues href="poRTIco.modularenvironment#_s9jDUI87EeimvNDjScjahQ"/>
+            <multiplesettableannotation href="poRTIco.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_DLvIc57BEeiLeZedBpDMew" Name="Ownership_HN_BS">
+            <multiplesettableannotation href="poRTIco.modularenvironment#__QluIo9BEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_DLw9oJ7BEeiLeZedBpDMew" Name="UpdateCondition_HN_BS" valueContent="NA">
+            <writableannotation href="poRTIco.modularenvironment#_Pg8Mo49BEeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_DLyLwZ7BEeiLeZedBpDMew" Name="Dimension_HN_BS" valueContent="Boolean">
+            <writableannotation href="poRTIco.modularenvironment#_ProkRI9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_DLvvgJ7BEeiLeZedBpDMew" Name="UpdateType_HN_BS">
+            <selectedValue href="poRTIco.modularenvironment#_LxnbMI9BEeimvNDjScjahQ"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_PwKmUY8_EeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_DLyLw57BEeiLeZedBpDMew" Name="Transportation_HN_BS">
+            <selectedValue href="poRTIco.modularenvironment#_SGHpsI9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_RRwNgo9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_DLyLxp7BEeiLeZedBpDMew" Name="Order_HN_BS">
+            <selectedValue href="poRTIco.modularenvironment#_NXkP4I9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_IERKQY9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_DLyy0J7BEeiLeZedBpDMew" Name="Update_HN_BS" annotationsetter="_DLvvgJ7BEeiLeZedBpDMew _DLw9oJ7BEeiLeZedBpDMew">
+            <combinedannotation href="poRTIco.modularenvironment#_zKMH854yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_DL1PEJ7BEeiLeZedBpDMew" Name="Distribution_HN_BS" annotationsetter="_DLyLxp7BEeiLeZedBpDMew _DLyLw57BEeiLeZedBpDMew _DLyLwZ7BEeiLeZedBpDMew">
+            <combinedannotation href="poRTIco.modularenvironment#_8DMwA54yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationinterface href="poRTIco.modularenvironment#_8yCrRI9FEeijo84HWAGaqg"/>
+          <data href="BusSim.simulationfeature#__LM3MJ48EeicjIM4r8s6LQ"/>
+        </additionenhanceddata>
+        <additionenhanceddata id="_uAsjgZ6_Eeiv8JFR-bpYNA" Name="Destination_BS">
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_BAgYQZ7HEeiLeZedBpDMew" Name="Sharing_D_BS">
+            <selectedValues href="poRTIco.modularenvironment#_s9jDUI87EeimvNDjScjahQ"/>
+            <multiplesettableannotation href="poRTIco.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_CS7CYZ7HEeiLeZedBpDMew" Name="Ownership_D_BS">
+            <multiplesettableannotation href="poRTIco.modularenvironment#__QluIo9BEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_Rt47kp7HEei-mtJnAA73Zg" Name="UpdateType_D_BS">
+            <selectedValue href="poRTIco.modularenvironment#_LxnbMI9BEeimvNDjScjahQ"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_PwKmUY8_EeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_SrHY0p7HEei-mtJnAA73Zg" Name="Transportation_D_BS">
+            <selectedValue href="poRTIco.modularenvironment#_SGHpsI9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_RRwNgo9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_TAsnQp7HEei-mtJnAA73Zg" Name="Order_D_BS">
+            <selectedValue href="poRTIco.modularenvironment#_NXkP4I9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_IERKQY9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_TgED057HEei-mtJnAA73Zg" Name="Distribution_D_BS" annotationsetter="_DLyLxp7BEeiLeZedBpDMew _DLyLw57BEeiLeZedBpDMew _DLyLwZ7BEeiLeZedBpDMew">
+            <combinedannotation href="poRTIco.modularenvironment#_8DMwA54yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_UFjWg57HEei-mtJnAA73Zg" Name="Update_D_BS" annotationsetter="_Rt47kp7HEei-mtJnAA73Zg _VyQv8J7HEei-mtJnAA73Zg">
+            <combinedannotation href="poRTIco.modularenvironment#_zKMH854yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_VyQv8J7HEei-mtJnAA73Zg" Name="updateCondition_D_BS" valueContent="NA">
+            <writableannotation href="poRTIco.modularenvironment#_Pg8Mo49BEeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_WT_kAJ7HEei-mtJnAA73Zg" Name="Dimension_D_BS" valueContent="">
+            <writableannotation href="poRTIco.modularenvironment#_ProkRI9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationinterface href="poRTIco.modularenvironment#_8yCrRI9FEeijo84HWAGaqg"/>
+          <data href="BusSim.simulationfeature#_5kfGUJ48EeicjIM4r8s6LQ"/>
+        </additionenhanceddata>
+        <additionenhanceddata id="_zt_dgZ6_Eeiv8JFR-bpYNA" Name="Collected_BS">
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_QzFqwZ7IEei-mtJnAA73Zg" Name="Sharing_C_BS">
+            <selectedValues href="poRTIco.modularenvironment#_sce9oI87EeimvNDjScjahQ"/>
+            <multiplesettableannotation href="poRTIco.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_SfPqkZ7IEei-mtJnAA73Zg" Name="Ownership_C_BS">
+            <multiplesettableannotation href="poRTIco.modularenvironment#__QluIo9BEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_St808p7IEei-mtJnAA73Zg" Name="UpdateType_C_BS">
+            <selectedValue href="poRTIco.modularenvironment#_LxnbMI9BEeimvNDjScjahQ"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_PwKmUY8_EeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_TP_yEp7IEei-mtJnAA73Zg" Name="Transportation_C_BS">
+            <selectedValue href="poRTIco.modularenvironment#_SGHpsI9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_RRwNgo9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_UBsUwp7IEei-mtJnAA73Zg" Name="Order_C_BS">
+            <selectedValue href="poRTIco.modularenvironment#_NXkP4I9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_IERKQY9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_UVPi457IEei-mtJnAA73Zg" Name="Distribution_C_BS" annotationsetter="_UBsUwp7IEei-mtJnAA73Zg _TP_yEp7IEei-mtJnAA73Zg _WfhpIJ7IEei-mtJnAA73Zg">
+            <combinedannotation href="poRTIco.modularenvironment#_zKMH854yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_VrBDA57IEei-mtJnAA73Zg" Name="Update_C_BS" annotationsetter="_St808p7IEei-mtJnAA73Zg _V_e3IJ7IEei-mtJnAA73Zg">
+            <combinedannotation href="poRTIco.modularenvironment#_zKMH854yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_V_e3IJ7IEei-mtJnAA73Zg" Name="updateCondition_C_BS" valueContent="">
+            <writableannotation href="poRTIco.modularenvironment#_Pg8Mo49BEeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_WfhpIJ7IEei-mtJnAA73Zg" Name="Dimension_C_BS" valueContent="Bool">
+            <writableannotation href="poRTIco.modularenvironment#_ProkRI9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+        </additionenhanceddata>
+        <objectclass href="BusSim.simulationfeature#_IdFuw548EeicjIM4r8s6LQ"/>
+      </additionenchancedobjectclass>
+      <additionenchancedobjectclass id="_PeNGBp7JEei-mtJnAA73Zg" Name="BusStop_BS" semantics="">
+        <annotationinterface href="poRTIco.modularenvironment#_0J-CMI9FEeijo84HWAGaqg"/>
+        <additionenhancedoperation id="_UGCXVJ7KEei-mtJnAA73Zg" Name="HumanRegistersAtBusStop_BS">
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_i0oSsZ7KEei-mtJnAA73Zg" Name="Sharing_BusStopRegOp_BS">
+            <selectedValues href="poRTIco.modularenvironment#_s9jDUI87EeimvNDjScjahQ"/>
+            <multiplesettableannotation href="poRTIco.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationinterface href="poRTIco.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+          <annotatedparameter id="_m5Ip9J7KEei-mtJnAA73Zg" Name="HumanName_BusStopRegOp_BS" semantics="">
+            <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_AbdNop7LEei-mtJnAA73Zg" Name="Transportation_BusStopRegOp_HumanNameParam_BS">
+              <selectedValue href="poRTIco.modularenvironment#_SGHpsI9CEeiN3uMSM_ELLw"/>
+              <exclusivesettableannotation href="poRTIco.modularenvironment#_RRwNgo9CEeiN3uMSM_ELLw"/>
+            </annotationsetter>
+            <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_A8KG8p7LEei-mtJnAA73Zg" Name="Order_BusStopRegOp_HumanNameParam_BS">
+              <selectedValue href="poRTIco.modularenvironment#_NXkP4I9CEeiN3uMSM_ELLw"/>
+              <exclusivesettableannotation href="poRTIco.modularenvironment#_IERKQY9CEeiN3uMSM_ELLw"/>
+            </annotationsetter>
+            <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_BUGs4J7LEei-mtJnAA73Zg" Name="Dimension__BusStopRegOp_HumanNameParam_BS" valueContent="">
+              <writableannotation href="poRTIco.modularenvironment#_ProkRI9CEeiN3uMSM_ELLw"/>
+            </annotationsetter>
+            <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_CCKFsZ7LEei-mtJnAA73Zg" Name="Distribution_BusStopRegOp_HumanNameParam_BS" annotationsetter="_A8KG8p7LEei-mtJnAA73Zg _BUGs4J7LEei-mtJnAA73Zg _AbdNop7LEei-mtJnAA73Zg">
+              <combinedannotation href="poRTIco.modularenvironment#_8DMwA54yEeieTJym-jlZmw"/>
+            </annotationsetter>
+            <annotationinterface href="poRTIco.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="BusSim.simulationfeature#//@simmoduledescription/@SimulationInformation/@objectclassoperation.0/@parameters.0"/>
+          </annotatedparameter>
+          <annotatedparameter id="_cZj3SJ7LEei-mtJnAA73Zg" Name="BusStopName_BusStopRegOp_BS">
+            <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_o9vJgp7LEei-mtJnAA73Zg" Name="Transportation_BusStopRegOp_BusStopNameParam_BS">
+              <selectedValue href="poRTIco.modularenvironment#_SGHpsI9CEeiN3uMSM_ELLw"/>
+              <exclusivesettableannotation href="poRTIco.modularenvironment#_RRwNgo9CEeiN3uMSM_ELLw"/>
+            </annotationsetter>
+            <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_pXefMp7LEei-mtJnAA73Zg" Name="Order_BusStopRegOp_BusStopNameParam_BS">
+              <selectedValue href="poRTIco.modularenvironment#_NXkP4I9CEeiN3uMSM_ELLw"/>
+              <exclusivesettableannotation href="poRTIco.modularenvironment#_IERKQY9CEeiN3uMSM_ELLw"/>
+            </annotationsetter>
+            <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_puB-AJ7LEei-mtJnAA73Zg" Name="Dimension__BusStopRegOp_BusStopNameParam_BS" valueContent="">
+              <writableannotation href="poRTIco.modularenvironment#_ProkRI9CEeiN3uMSM_ELLw"/>
+            </annotationsetter>
+            <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_qYkIw57LEei-mtJnAA73Zg" Name="Distribution_BusStopRegOp_BusStopNameParam_BS" annotationsetter="_pXefMp7LEei-mtJnAA73Zg _o9vJgp7LEei-mtJnAA73Zg _puB-AJ7LEei-mtJnAA73Zg">
+              <combinedannotation href="poRTIco.modularenvironment#_8DMwA54yEeieTJym-jlZmw"/>
+            </annotationsetter>
+            <annotationinterface href="poRTIco.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="BusSim.simulationfeature#//@simmoduledescription/@SimulationInformation/@objectclassoperation.0/@parameters.1"/>
+          </annotatedparameter>
+          <objectclassoperation href="BusSim.simulationfeature#_morAwJ41EeieTJym-jlZmw"/>
+        </additionenhancedoperation>
+        <additionenhanceddata id="_TDrX5Z7JEei-mtJnAA73Zg" Name="BusStopName_BS" semantics="">
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_ajZ40Z7JEei-mtJnAA73Zg" Name="Sharing_BSName_BS">
+            <selectedValues href="poRTIco.modularenvironment#_sce9oI87EeimvNDjScjahQ"/>
+            <multiplesettableannotation href="poRTIco.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_bMFpcZ7JEei-mtJnAA73Zg" Name="Ownership_BSName_BS">
+            <multiplesettableannotation href="poRTIco.modularenvironment#__QluIo9BEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_bzrN4p7JEei-mtJnAA73Zg" Name="UpdateType_BSName_BS">
+            <selectedValue href="poRTIco.modularenvironment#_LxnbMI9BEeimvNDjScjahQ"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_PwKmUY8_EeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_cOAZcp7JEei-mtJnAA73Zg" Name="Transportation_BSName_BS">
+            <selectedValue href="poRTIco.modularenvironment#_SGHpsI9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_RRwNgo9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_cjhWcp7JEei-mtJnAA73Zg" Name="Order_BSName_BS">
+            <selectedValue href="poRTIco.modularenvironment#_NXkP4I9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_IERKQY9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_c6DAE57JEei-mtJnAA73Zg" Name="Distribution_BSName_BS" annotationsetter="_cjhWcp7JEei-mtJnAA73Zg _d8150J7JEei-mtJnAA73Zg _cOAZcp7JEei-mtJnAA73Zg">
+            <combinedannotation href="poRTIco.modularenvironment#_8DMwA54yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_diLXE57JEei-mtJnAA73Zg" Name="Update_BSName_BS" annotationsetter="_bzrN4p7JEei-mtJnAA73Zg _eeIpAJ7JEei-mtJnAA73Zg">
+            <combinedannotation href="poRTIco.modularenvironment#_zKMH854yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_d8150J7JEei-mtJnAA73Zg" Name="Dimension_BSName_BS" valueContent="">
+            <writableannotation href="poRTIco.modularenvironment#_ProkRI9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_eeIpAJ7JEei-mtJnAA73Zg" Name="UpdateCondition_BSName_BS">
+            <writableannotation href="poRTIco.modularenvironment#_Pg8Mo49BEeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationinterface href="poRTIco.modularenvironment#_8yCrRI9FEeijo84HWAGaqg"/>
+          <data href="BusSim.simulationfeature#_9y_ZAJ46EeicjIM4r8s6LQ"/>
+        </additionenhanceddata>
+        <objectclass href="BusSim.simulationfeature#_7ZvfJ545EeidEv4lQ_FuuQ"/>
+      </additionenchancedobjectclass>
+    </annotationenhancedinformation>
+    <simmodule href="BusSim.simulationfeature#_gWMtcJO-Eei2D-ymkiAt9g"/>
+  </assembablecomponent>
+  <assembablecomponent xsi:type="ModularSimulationAssembly:MSEComponent" id="_FX4O4J7MEei-mtJnAA73Zg" Name="poRTIcoComponent">
+    <componentconnector xsi:type="AssemblyConnections:MSEComponentConnector" id="_KzAEsZ7VEei-mtJnAA73Zg" Name="poRTIcoRTIAmbassador">
+      <mseserviceinterface href="poRTIco.modularenvironment#__ZVvUo_iEeidsK6u7bOs4Q"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_kc6ako_hEeidsK6u7bOs4Q"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_uZTnso_gEeidsK6u7bOs4Q"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_2Ag0Mo_hEeidsK6u7bOs4Q"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_S9rHEo_iEeidsK6u7bOs4Q"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_M68dso_kEeidsK6u7bOs4Q"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_ZXUUQo_jEeidsK6u7bOs4Q"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_FdbRko9HEeijo84HWAGaqg"/>
+    </componentconnector>
+    <mse_entity xsi:type="ModularEnvironment:Coordinator" href="poRTIco.modularenvironment#_fBdjUJ4rEeit6tLJby_Vyw"/>
+  </assembablecomponent>
+  <assembablecomponent xsi:type="ModularSimulationAssembly:SimulationFeatureComponent" id="_JvXMjp7MEei-mtJnAA73Zg" Name="HumanSimComponent" semantics="This simulation simulations the workway of one or multiple humans either by walking directly or going to busstation to get to work">
+    <componentconnector xsi:type="AssemblyConnections:SimulationComponentConnector" id="_LU5Q0J7VEei-mtJnAA73Zg" Name="HumanSimFederateConnector">
+      <mseserviceinterface href="poRTIco.modularenvironment#_JV7tgpCiEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_h7aq8pChEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_bJF7MpCkEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_WRmLUpClEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="poRTIco.modularenvironment#_ExhKUpCmEeizmvAWlfhMkw"/>
+    </componentconnector>
+    <adapterservice xsi:type="AdapterServices:StructuralAdapter" id="_G3vjUaiJEeiE2ZIeI0meIA" Name="HLAAdapter_HS"/>
+    <adapterdescriptionattachment adapterservice="_G3vjUaiJEeiE2ZIeI0meIA">
+      <adaptationmarkermapping>
+        <datamarker href="WorkwaySimAdaptation.adaptation#_WrdrqqXUEeinHcG4teijng"/>
+        <adaptable xsi:type="DataTypes:DataTypeCollection" href="BusSim.simulationfeature#_Rh9QVJ_jEeiBSr1jVNFitg"/>
+        <adaptable xsi:type="DataTypes:DataTypeCollection" href="poRTIco.modularenvironment#_SddKoo9NEeijo84HWAGaqg"/>
+        <adaptable xsi:type="DataTypes:DataTypeCollection" href="HumanSim.simulationfeature#_jr42dKVPEeiuNYKvMwv4lw"/>
+      </adaptationmarkermapping>
+      <adaptationmarkermapping>
+        <datamarker href="WorkwaySimAdaptation.adaptation#_fqkUqqXUEeinHcG4teijng"/>
+        <adaptable xsi:type="DataTypes:BaseDataType" href="HumanSim.simulationfeature#_Oyw70ZPSEeiM77OeRpXYzQ"/>
+      </adaptationmarkermapping>
+      <adaptationmarkermapping>
+        <datamarker href="WorkwaySimAdaptation.adaptation#_hajrmqXUEeinHcG4teijng"/>
+        <adaptable xsi:type="DataTypes:BaseDataType" href="HumanSim.simulationfeature#_BPnH0ZMtEeipj7QkHcVH6A"/>
+      </adaptationmarkermapping>
+      <adaptationdescription xsi:type="AdaptationDescriptions:BaseconnectedAdaptation" href="WorkwaySimAdaptation.adaptation#_lW6MaaXUEeinHcG4teijng"/>
+      <adaptationdefinitionrepository href="WorkwaySimAdaptation.adaptation#_T8ZdUKXUEeinHcG4teijng"/>
+    </adapterdescriptionattachment>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_UllOiJ7UEei-mtJnAA73Zg" simulationcomonent="_JvXMjp7MEei-mtJnAA73Zg">
+      <assemblyinterface href="WorkwaySimInterfaces.interfacedefinition#_sqnpMZ5CEeiCC7bRkv877Q"/>
+      <requieringinterfaceobjectclassmapping annotatedobjectclass="_9zNmxp7PEei-mtJnAA73Zg">
+        <data_interface_mapping annotateddata="_AqumdZ7QEei-mtJnAA73Zg">
+          <interfacedata href="WorkwaySimInterfaces.interfacedefinition#_yuRNsJ5CEeiCC7bRkv877Q"/>
+        </data_interface_mapping>
+        <requireddataentry xsi:type="SimulationInformation:ReferencingRequiredOOEntry" href="HumanSim.simulationfeature#_Ex6HZp5FEeiCC7bRkv877Q"/>
+        <interfaceobjectclass href="WorkwaySimInterfaces.interfacedefinition#_ve4gkJ5CEeiCC7bRkv877Q"/>
+      </requieringinterfaceobjectclassmapping>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_kaIsaZ7UEei-mtJnAA73Zg" simulationcomonent="_JvXMjp7MEei-mtJnAA73Zg">
+      <assemblyinterface href="WorkwaySimInterfaces.interfacedefinition#_42S74Z5CEeiCC7bRkv877Q"/>
+      <providingOperationMapping annotatedoperation="_UmiNmJ7QEei-mtJnAA73Zg">
+        <parameter_interface_mapping annotatedparameter="_gXG4qJ7QEei-mtJnAA73Zg">
+          <interfaceparameter href="WorkwaySimInterfaces.interfacedefinition#_nCmt4aewEeiYJtdntXK3bQ"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_d_Q3hJ7QEei-mtJnAA73Zg">
+          <interfaceparameter href="WorkwaySimInterfaces.interfacedefinition#_lXw8sKewEeiYJtdntXK3bQ"/>
+        </parameter_interface_mapping>
+        <interfaceoperation href="WorkwaySimInterfaces.interfacedefinition#_0b2ksaX0EeioWteD-iW6lA"/>
+      </providingOperationMapping>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_0Af9SZ7UEei-mtJnAA73Zg" simulationcomonent="_JvXMjp7MEei-mtJnAA73Zg">
+      <assemblyinterface href="WorkwaySimInterfaces.interfacedefinition#_6XkW0J5BEeiCC7bRkv877Q"/>
+      <providinginterfaceobjectclassmapping additionenchancedobjectclass="_dWMpMJ7MEei-mtJnAA73Zg">
+        <data_interface_mapping annotateddata="_GZSWqZ7OEei-mtJnAA73Zg">
+          <interfacedata href="WorkwaySimInterfaces.interfacedefinition#_hLDOkJ5CEeiCC7bRkv877Q"/>
+        </data_interface_mapping>
+        <data_interface_mapping annotateddata="_FR0_VZ7OEei-mtJnAA73Zg">
+          <interfacedata href="WorkwaySimInterfaces.interfacedefinition#_UktZIJ5CEeiCC7bRkv877Q"/>
+        </data_interface_mapping>
+        <interfaceobjectclass href="WorkwaySimInterfaces.interfacedefinition#_FtUHEJ5CEeiCC7bRkv877Q"/>
+      </providinginterfaceobjectclassmapping>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_8PgmGJ7UEei-mtJnAA73Zg" simulationcomonent="_JvXMjp7MEei-mtJnAA73Zg">
+      <assemblyinterface href="WorkwaySimInterfaces.interfacedefinition#_DJIRcKX1EeioWteD-iW6lA"/>
+      <requieringinterfaceobjectclassmapping annotatedobjectclass="_dWMpMJ7MEei-mtJnAA73Zg">
+        <data_interface_mapping annotateddata="_JfD0yZ7OEei-mtJnAA73Zg">
+          <interfacedata href="WorkwaySimInterfaces.interfacedefinition#_GjQ2AKX1EeioWteD-iW6lA"/>
+        </data_interface_mapping>
+        <requireddataentry xsi:type="SimulationInformation:ReferencingRequiredOOEntry" href="HumanSim.simulationfeature#_OTytVp5FEeiCC7bRkv877Q"/>
+        <interfaceobjectclass href="WorkwaySimInterfaces.interfacedefinition#_FtUHEJ5CEeiCC7bRkv877Q"/>
+      </requieringinterfaceobjectclassmapping>
+    </interfacemapping>
+    <annotationenhancedinformation xsi:type="AnnotationEnhancement:OOAnnotationEnhancedInformation">
+      <additionenchancedobjectclass id="_dWMpMJ7MEei-mtJnAA73Zg" Name="Human_HS" semantics="">
+        <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_rpTicZ7MEei-mtJnAA73Zg" Name="Human_Sharing_HS">
+          <selectedValues href="poRTIco.modularenvironment#_sce9oI87EeimvNDjScjahQ"/>
+          <selectedValues href="poRTIco.modularenvironment#_s9jDUI87EeimvNDjScjahQ"/>
+          <multiplesettableannotation href="poRTIco.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+        </annotationsetter>
+        <annotationinterface href="poRTIco.modularenvironment#_0J-CMI9FEeijo84HWAGaqg"/>
+        <additionenhanceddata id="_FR0_VZ7OEei-mtJnAA73Zg" Name="HumanName_HS" semantics="">
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_pemTgZ7OEei-mtJnAA73Zg" Name="Sharing_HN_HS">
+            <selectedValues href="poRTIco.modularenvironment#_sce9oI87EeimvNDjScjahQ"/>
+            <multiplesettableannotation href="poRTIco.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_qrSwIZ7OEei-mtJnAA73Zg" Name="Ownership_HN_HS">
+            <selectedValues href="poRTIco.modularenvironment#_GX0PgI9CEeiN3uMSM_ELLw"/>
+            <selectedValues href="poRTIco.modularenvironment#_EAqK4I9CEeiN3uMSM_ELLw"/>
+            <multiplesettableannotation href="poRTIco.modularenvironment#__QluIo9BEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_rSZMYp7OEei-mtJnAA73Zg" Name="UpdateType_HN_HS">
+            <selectedValue href="poRTIco.modularenvironment#_LxnbMI9BEeimvNDjScjahQ"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_PwKmUY8_EeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_r4aqkp7OEei-mtJnAA73Zg" Name="Transportation_HN_HS">
+            <selectedValue href="poRTIco.modularenvironment#_SGHpsI9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_RRwNgo9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_sPnpop7OEei-mtJnAA73Zg" Name="Order_HN_HS">
+            <selectedValue href="poRTIco.modularenvironment#_NXkP4I9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_IERKQY9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_srcC857OEei-mtJnAA73Zg" Name="Update_HN_HS" annotationsetter="_rSZMYp7OEei-mtJnAA73Zg _tifmwJ7OEei-mtJnAA73Zg">
+            <combinedannotation href="poRTIco.modularenvironment#_zKMH854yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_tKkO857OEei-mtJnAA73Zg" Name="Distribution_HN_HS" annotationsetter="_r4aqkp7OEei-mtJnAA73Zg _sPnpop7OEei-mtJnAA73Zg _t_RpYJ7OEei-mtJnAA73Zg">
+            <combinedannotation href="poRTIco.modularenvironment#_8DMwA54yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_tifmwJ7OEei-mtJnAA73Zg" Name="UpdateCondition_HN_HS" valueContent="">
+            <writableannotation href="poRTIco.modularenvironment#_Pg8Mo49BEeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_t_RpYJ7OEei-mtJnAA73Zg" Name="Dimension_HN_HS">
+            <writableannotation href="poRTIco.modularenvironment#_ProkRI9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationinterface href="poRTIco.modularenvironment#_8yCrRI9FEeijo84HWAGaqg"/>
+          <data href="HumanSim.simulationfeature#_N7R6MpPSEeiM77OeRpXYzQ"/>
+        </additionenhanceddata>
+        <additionenhanceddata id="_GZSWqZ7OEei-mtJnAA73Zg" Name="Destination_HS">
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_VnlQUZ7PEei-mtJnAA73Zg" Name="Sharing_D_HS">
+            <selectedValues href="poRTIco.modularenvironment#_sce9oI87EeimvNDjScjahQ"/>
+            <multiplesettableannotation href="poRTIco.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_W8ueUZ7PEei-mtJnAA73Zg" Name="Ownership_D_HS">
+            <selectedValues href="poRTIco.modularenvironment#_GX0PgI9CEeiN3uMSM_ELLw"/>
+            <selectedValues href="poRTIco.modularenvironment#_EAqK4I9CEeiN3uMSM_ELLw"/>
+            <multiplesettableannotation href="poRTIco.modularenvironment#__QluIo9BEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_vkM_0p7OEei-mtJnAA73Zg" Name="UpdateType_D_HS">
+            <selectedValue href="poRTIco.modularenvironment#_LxnbMI9BEeimvNDjScjahQ"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_PwKmUY8_EeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_wLmXAp7OEei-mtJnAA73Zg" Name="Transportation_D_HS">
+            <selectedValue href="poRTIco.modularenvironment#_SGHpsI9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_RRwNgo9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_wktakp7OEei-mtJnAA73Zg" Name="Order_D_HS">
+            <selectedValue href="poRTIco.modularenvironment#_NXkP4I9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_IERKQY9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_w8SNE57OEei-mtJnAA73Zg" Name="Distribution_D_HS" annotationsetter="_wLmXAp7OEei-mtJnAA73Zg _wktakp7OEei-mtJnAA73Zg _yUFtgJ7OEei-mtJnAA73Zg">
+            <combinedannotation href="poRTIco.modularenvironment#_8DMwA54yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_xb3sE57OEei-mtJnAA73Zg" Name="Update_D_HS"/>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_xv73kJ7OEei-mtJnAA73Zg" Name="updateCondition_D_HS" valueContent="">
+            <writableannotation href="poRTIco.modularenvironment#_Pg8Mo49BEeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_yUFtgJ7OEei-mtJnAA73Zg" Name="Dimension_D_HS" valueContent="">
+            <writableannotation href="poRTIco.modularenvironment#_ProkRI9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+        </additionenhanceddata>
+        <additionenhanceddata id="_JfD0yZ7OEei-mtJnAA73Zg" Name="Collected_HS">
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_zh0r8Z7OEei-mtJnAA73Zg" Name="Sharing_C_HS">
+            <selectedValues href="poRTIco.modularenvironment#_s9jDUI87EeimvNDjScjahQ"/>
+            <multiplesettableannotation href="poRTIco.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_1E9SoZ7OEei-mtJnAA73Zg" Name="Ownership_C_HS"/>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_3ag0wp7OEei-mtJnAA73Zg" Name="UpdateType_C_HS">
+            <selectedValue href="poRTIco.modularenvironment#_LxnbMI9BEeimvNDjScjahQ"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_PwKmUY8_EeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_30T00p7OEei-mtJnAA73Zg" Name="Transportation_C_HS">
+            <selectedValue href="poRTIco.modularenvironment#_SGHpsI9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_RRwNgo9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_1jOjAp7OEei-mtJnAA73Zg" Name="Order_C_HS">
+            <selectedValue href="poRTIco.modularenvironment#_NXkP4I9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_IERKQY9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_4fccg57OEei-mtJnAA73Zg" Name="Distribution_C_HS" annotationsetter="_30T00p7OEei-mtJnAA73Zg _1jOjAp7OEei-mtJnAA73Zg _7J2NQJ7OEei-mtJnAA73Zg">
+            <combinedannotation href="poRTIco.modularenvironment#_8DMwA54yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_5E56A57OEei-mtJnAA73Zg" Name="Update_C_HS" annotationsetter="_3ag0wp7OEei-mtJnAA73Zg _5Ys_wJ7OEei-mtJnAA73Zg">
+            <combinedannotation href="poRTIco.modularenvironment#_zKMH854yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_5Ys_wJ7OEei-mtJnAA73Zg" Name="updateCondition_C_HS" valueContent="">
+            <writableannotation href="poRTIco.modularenvironment#_Pg8Mo49BEeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_7J2NQJ7OEei-mtJnAA73Zg" Name="Dimension_C_HS" valueContent="Bool">
+            <writableannotation href="poRTIco.modularenvironment#_ProkRI9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+        </additionenhanceddata>
+        <objectclass href="HumanSim.simulationfeature#_vBWq0ZMwEei0D9ptBgOI7Q"/>
+      </additionenchancedobjectclass>
+      <additionenchancedobjectclass id="_9zNmxp7PEei-mtJnAA73Zg" Name="BusStop_HS">
+        <additionenhancedoperation id="_UmiNmJ7QEei-mtJnAA73Zg" Name="HumanRegistersAtBusStop_HS">
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_bnquAZ7QEei-mtJnAA73Zg" Name="Sharing_BusStopRegOp_HS">
+            <selectedValues href="poRTIco.modularenvironment#_sce9oI87EeimvNDjScjahQ"/>
+            <multiplesettableannotation href="poRTIco.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotatedparameter id="_d_Q3hJ7QEei-mtJnAA73Zg" Name="HumanName_BusStopRegOp_HS">
+            <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_RHwHop7SEei-mtJnAA73Zg" Name="Transportation_BusStopRegOp_HumanNameParam_HS">
+              <selectedValue href="poRTIco.modularenvironment#_SGHpsI9CEeiN3uMSM_ELLw"/>
+              <exclusivesettableannotation href="poRTIco.modularenvironment#_RRwNgo9CEeiN3uMSM_ELLw"/>
+            </annotationsetter>
+            <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_TPjhop7SEei-mtJnAA73Zg" Name="Order_BusStopRegOp_HumanNameParam_HS">
+              <selectedValue href="poRTIco.modularenvironment#_NXkP4I9CEeiN3uMSM_ELLw"/>
+              <exclusivesettableannotation href="poRTIco.modularenvironment#_IERKQY9CEeiN3uMSM_ELLw"/>
+            </annotationsetter>
+            <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_iPtuIJ7SEei-mtJnAA73Zg" Name="Dimension__BusStopRegOp_HumanNameParam_HS" valueContent="">
+              <writableannotation href="poRTIco.modularenvironment#_ProkRI9CEeiN3uMSM_ELLw"/>
+            </annotationsetter>
+            <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_i451E57SEei-mtJnAA73Zg" Name="Distribution_BusStopRegOp_HumanNameParam_HS" annotationsetter="_RHwHop7SEei-mtJnAA73Zg _iPtuIJ7SEei-mtJnAA73Zg _TPjhop7SEei-mtJnAA73Zg">
+              <combinedannotation href="poRTIco.modularenvironment#_8DMwA54yEeieTJym-jlZmw"/>
+            </annotationsetter>
+          </annotatedparameter>
+          <annotatedparameter id="_gXG4qJ7QEei-mtJnAA73Zg" Name="BusStopName_BusStopRegOp_HS">
+            <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_0iF5Up7SEei-mtJnAA73Zg" Name="Transportation_BusStopRegOp_BusStopNameParam_HS">
+              <selectedValue href="poRTIco.modularenvironment#_SGHpsI9CEeiN3uMSM_ELLw"/>
+              <exclusivesettableannotation href="poRTIco.modularenvironment#_RRwNgo9CEeiN3uMSM_ELLw"/>
+            </annotationsetter>
+            <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_0_KP0p7SEei-mtJnAA73Zg" Name="Order_BusStopRegOp_BusStopNameParam_HS">
+              <selectedValue href="poRTIco.modularenvironment#_NXkP4I9CEeiN3uMSM_ELLw"/>
+              <exclusivesettableannotation href="poRTIco.modularenvironment#_IERKQY9CEeiN3uMSM_ELLw"/>
+            </annotationsetter>
+            <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_1VYXdJ7SEei-mtJnAA73Zg" Name="Dimension__BusStopRegOp_BusStopNameParam_HS">
+              <writableannotation href="poRTIco.modularenvironment#_ProkRI9CEeiN3uMSM_ELLw"/>
+            </annotationsetter>
+            <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_2xgXM57SEei-mtJnAA73Zg" Name="Distribution_BusStopRegOp_BusStopNameParam_HS" annotationsetter="_0iF5Up7SEei-mtJnAA73Zg _0_KP0p7SEei-mtJnAA73Zg _1VYXdJ7SEei-mtJnAA73Zg">
+              <combinedannotation href="poRTIco.modularenvironment#_8DMwA54yEeieTJym-jlZmw"/>
+            </annotationsetter>
+          </annotatedparameter>
+        </additionenhancedoperation>
+        <additionenhanceddata id="_AqumdZ7QEei-mtJnAA73Zg" Name="BusStopName_HS">
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_EAUCMZ7QEei-mtJnAA73Zg" Name="Sharing_BSName_HS">
+            <selectedValues href="poRTIco.modularenvironment#_s9jDUI87EeimvNDjScjahQ"/>
+            <multiplesettableannotation href="poRTIco.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_FbXq8Z7QEei-mtJnAA73Zg" Name="Ownership_BSName_HS">
+            <multiplesettableannotation href="poRTIco.modularenvironment#__QluIo9BEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_FywQMp7QEei-mtJnAA73Zg" Name="UpdateType_BSName_HS">
+            <selectedValue href="poRTIco.modularenvironment#_LxnbMI9BEeimvNDjScjahQ"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_PwKmUY8_EeimvNDjScjahQ"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_GciNAp7QEei-mtJnAA73Zg" Name="Transportation_BSName_HS">
+            <selectedValue href="poRTIco.modularenvironment#_SGHpsI9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_RRwNgo9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_G07e4p7QEei-mtJnAA73Zg" Name="Order_BSName_HS">
+            <selectedValue href="poRTIco.modularenvironment#_NXkP4I9CEeiN3uMSM_ELLw"/>
+            <exclusivesettableannotation href="poRTIco.modularenvironment#_IERKQY9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_HMWgY57QEei-mtJnAA73Zg" Name="Distribution_BSName_HS" annotationsetter="_GciNAp7QEei-mtJnAA73Zg _G07e4p7QEei-mtJnAA73Zg _IFnDoJ7QEei-mtJnAA73Zg">
+            <combinedannotation href="poRTIco.modularenvironment#_8DMwA54yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:CombinedAnnotationSetter" id="_HrkL857QEei-mtJnAA73Zg" Name="Update_BSName_HS" annotationsetter="_FywQMp7QEei-mtJnAA73Zg _InUpkJ7QEei-mtJnAA73Zg">
+            <combinedannotation href="poRTIco.modularenvironment#_zKMH854yEeieTJym-jlZmw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_IFnDoJ7QEei-mtJnAA73Zg" Name="Dimension_BSName_HS">
+            <writableannotation href="poRTIco.modularenvironment#_ProkRI9CEeiN3uMSM_ELLw"/>
+          </annotationsetter>
+          <annotationsetter xsi:type="Annotations:WritableAnnotationSetter" id="_InUpkJ7QEei-mtJnAA73Zg" Name="UpdateCondition_BSName_BS">
+            <writableannotation href="poRTIco.modularenvironment#_Pg8Mo49BEeimvNDjScjahQ"/>
+          </annotationsetter>
+          <data href="HumanSim.simulationfeature#_IiVFAJ5FEeiCC7bRkv877Q"/>
+        </additionenhanceddata>
+      </additionenchancedobjectclass>
+    </annotationenhancedinformation>
+    <simmodule href="HumanSim.simulationfeature#_DWjjsJ5FEeiCC7bRkv877Q"/>
+  </assembablecomponent>
+</ModularSimulationAssembly:SimulationAssembly>

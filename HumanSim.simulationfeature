@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationFeature:SimulationFeature xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:SimulationFeature="edu.kit.ipd.sdq.Modularization.SimulationFeature" xmlns:DataTypes="edu.kit.ipd.sdq.Modularization.DataRepresentation.DataTypes" xmlns:SimulationInformation="edu.kit.ipd.sdq.Modularization.DataRepresentation.SimulationInformation" id="_DWjjsJ5FEeiCC7bRkv877Q" Name="HumanSim">
+  <simulationDescription id="_6nX9oZMuEeiak9pQ0b34VA" Name="Human_Simulation_Description" simulationDescription="Simulates the way of a human on its workdays. Either a human can walk directly to work and home or drives by bus. A human way consists of home and work. By driving by bus, the way consists of a home and work busstation and a bus that travels betweens stations">
+    <simulationdata xsi:type="SimulationInformation:ObjectOrientedViewSimulationData" id="_sKaS4JMwEei0D9ptBgOI7Q" Name="HumanSim_Data">
+      <objectclassoperation id="_HGs_IJO-Eei2D-ymkiAt9g" Name="registerHumanAtBusStop_HS" semantics="This class should register humans on a BusStop, only created for required entry">
+        <parameters Name="BusStopName_HS" dataType="_Oyw70ZPSEeiM77OeRpXYzQ"/>
+        <parameters Name="HumanName_HS" dataType="_Oyw70ZPSEeiM77OeRpXYzQ"/>
+      </objectclassoperation>
+      <requireddataentry xsi:type="SimulationInformation:ReferencingRequiredOOEntry" id="_Ex6HZp5FEeiCC7bRkv877Q" objectclass="_EIa49JSWEeiYL8iAEhvtCw">
+        <data id="_IiVFAJ5FEeiCC7bRkv877Q" Name="BusStopName_HS" datatype="_Oyw70ZPSEeiM77OeRpXYzQ"/>
+      </requireddataentry>
+      <requireddataentry xsi:type="SimulationInformation:ReferencingRequiredOOEntry" id="_OTytVp5FEeiCC7bRkv877Q" objectclass="_vBWq0ZMwEei0D9ptBgOI7Q">
+        <data id="_SoW50J5FEeiCC7bRkv877Q" Name="collected_HS" datatype="_Cr2RwZMsEeipj7QkHcVH6A"/>
+      </requireddataentry>
+      <objectclass id="_vBWq0ZMwEei0D9ptBgOI7Q" Name="Human_HS" semantics="This human data only contains information about its state, its behaviour as well as times of workdays " referencingrequiredooentry="_OTytVp5FEeiCC7bRkv877Q">
+        <data id="_6AM-AZMwEei0D9ptBgOI7Q" Name="behaviour_HS" semantics="the humans behaviour, if walking or driving by bus" datatype="_hdPs85MtEeipj7QkHcVH6A"/>
+        <data id="_N7R6MpPSEeiM77OeRpXYzQ" Name="name_HS" datatype="_Oyw70ZPSEeiM77OeRpXYzQ"/>
+        <data id="_2Tv_QJ5FEeiCC7bRkv877Q" Name="Destination_HS" datatype="_YAfl5qXJEeinHcG4teijng"/>
+      </objectclass>
+      <objectclass id="_EIa49JSWEeiYL8iAEhvtCw" Name="BusStop_HS" objectclassoperation="_HGs_IJO-Eei2D-ymkiAt9g" referencingrequiredooentry="_Ex6HZp5FEeiCC7bRkv877Q"/>
+    </simulationdata>
+  </simulationDescription>
+  <dataTypeContainer id="_9NRJMpMrEeipj7QkHcVH6A" Name="HumanSim_DTC">
+    <unittypecontainer id="_KLkLoJMsEeipj7QkHcVH6A" Name="Duration" semantics="Represents a duration ==> The time units" unit="_k-eikpMuEeiak9pQ0b34VA _tZtCcpMuEeiak9pQ0b34VA _qDWxspMuEeiak9pQ0b34VA"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_Cr2RwZMsEeipj7QkHcVH6A" Name="HumanBoolean" semantics="Represents a boolean value" stepSize="1" initialValue="0">
+      <range lowerBounds="0" upperBounds="1"/>
+    </datatype>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_BPnH0ZMtEeipj7QkHcVH6A" Name="HumanInt" stepSize="1" initialValue="0" primitiveDataType="INTEGER">
+      <range lowerBounds="0"/>
+    </datatype>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_xp8LwZMyEei0D9ptBgOI7Q" Name="HumanDouble" stepSize="" initialValue="" primitiveDataType="DOUBLE"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_Oyw70ZPSEeiM77OeRpXYzQ" Name="HumanString" stepSize="1" initialValue="&quot;&quot;" primitiveDataType="STRING"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_hDjiQaVPEeiuNYKvMwv4lw" Name="HumanByte" primitiveDataType="BYTE"/>
+    <datatype xsi:type="DataTypes:EnumType" id="_hdPs85MtEeipj7QkHcVH6A" Name="HumanBehaviour" representingDataType="_BPnH0ZMtEeipj7QkHcVH6A">
+      <enumliteral id="_DWkx0J5FEeiCC7bRkv877Q" literalName="DRIVING_BY_BUS"/>
+      <enumliteral id="_DWkx0Z5FEeiCC7bRkv877Q" literalName="WALKING" literalValue="1"/>
+    </datatype>
+    <datatype xsi:type="DataTypes:Unit" id="_k-eikpMuEeiak9pQ0b34VA" Name="second" semantics="" basedatatype="_xp8LwZMyEei0D9ptBgOI7Q" unitSymbol="s" unittypecontainer="_KLkLoJMsEeipj7QkHcVH6A"/>
+    <datatype xsi:type="DataTypes:Unit" id="_qDWxspMuEeiak9pQ0b34VA" Name="minute" basedatatype="_xp8LwZMyEei0D9ptBgOI7Q" unitSymbol="min" unittypecontainer="_KLkLoJMsEeipj7QkHcVH6A"/>
+    <datatype xsi:type="DataTypes:Unit" id="_tZtCcpMuEeiak9pQ0b34VA" Name="hour" basedatatype="_xp8LwZMyEei0D9ptBgOI7Q" unitSymbol="h" unittypecontainer="_KLkLoJMsEeipj7QkHcVH6A"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_jr42dKVPEeiuNYKvMwv4lw" Name="HumanByte[]" classicaldatatype="_hDjiQaVPEeiuNYKvMwv4lw"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" id="_YAfl5qXJEeinHcG4teijng" Name="BusStop" objectclass="_EIa49JSWEeiYL8iAEhvtCw"/>
+  </dataTypeContainer>
+  <basicsimulationcomponent href="HumanSim.modularsimulationassembly#_JvXMjp7MEei-mtJnAA73Zg"/>
+</SimulationFeature:SimulationFeature>

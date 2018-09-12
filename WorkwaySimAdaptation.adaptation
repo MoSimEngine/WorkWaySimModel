@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Adaptation:AdaptationDefinitionRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Adaptation="edu.kit.ipd.sdq.Modularization.Adaptation" xmlns:AdaptationConversion="edu.kit.ipd.sdq.Modularization.Adaptation.AdaptationConversion" xmlns:AdaptationDescriptions="edu.kit.ipd.sdq.Modularization.Adaptation.AdaptationDescriptions" id="_T8ZdUKXUEeinHcG4teijng" Name="HumanSimAdaptationRepository">
+  <adaptationconversion xsi:type="AdaptationConversion:TransformationalConversion" id="_wRu7MaXUEeinHcG4teijng" Name="ByteArrayToStringConversion" semantics="" textualConversionDescription="Transforms  a string to Array of type byte or Array of TypeByte to a String conforming to poRTIco "/>
+  <adaptationconversion xsi:type="AdaptationConversion:TransformationalConversion" id="_EZJ8caXVEeinHcG4teijng" Name="ByteArrayToIntegerConversion" semantics="" textualConversionDescription="Transforms  an integer to array of type byte or array of type byte to a integer conforming to poRTIco "/>
+  <adaptationdescription xsi:type="AdaptationDescriptions:BaseconnectedAdaptation" id="_lW6MaaXUEeinHcG4teijng" Name="HLAByteArrayAdaption" subProperty="" datamarker="_WrdrqqXUEeinHcG4teijng">
+    <derivedelement datamarker="_fqkUqqXUEeinHcG4teijng" adaptationconversion="_wRu7MaXUEeinHcG4teijng"/>
+    <derivedelement datamarker="_hajrmqXUEeinHcG4teijng" adaptationconversion="_EZJ8caXVEeinHcG4teijng"/>
+  </adaptationdescription>
+  <datamarker id="_WrdrqqXUEeinHcG4teijng" Name="byteArray"/>
+  <datamarker id="_fqkUqqXUEeinHcG4teijng" Name="string"/>
+  <datamarker id="_hajrmqXUEeinHcG4teijng" Name="integer"/>
+</Adaptation:AdaptationDefinitionRepository>

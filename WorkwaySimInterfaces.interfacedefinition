@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterfaceDefinition:InterfaceRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:InterfaceDefinition="edu.kit.ipd.sdq.Modularization.Assembly.AssemblyInterface.InterfaceDefinition" id="_vLuJcJ5BEeiCC7bRkv877Q" Name="HumanSim_Interfaces">
+  <assemblyinterface id="_6XkW0J5BEeiCC7bRkv877Q" Name="HumanAttributes">
+    <interfaceobjectclass id="_FtUHEJ5CEeiCC7bRkv877Q" Name="Human_Attr">
+      <interfacedata id="_UktZIJ5CEeiCC7bRkv877Q" Name="humanName">
+        <dataTypeDescriptions>representedAsString</dataTypeDescriptions>
+      </interfacedata>
+      <interfacedata id="_hLDOkJ5CEeiCC7bRkv877Q" Name="destination" semantics="">
+        <dataTypeDescriptions>Represents the Destination BusStop as string</dataTypeDescriptions>
+      </interfacedata>
+    </interfaceobjectclass>
+  </assemblyinterface>
+  <assemblyinterface id="_sqnpMZ5CEeiCC7bRkv877Q" Name="BusStopAttributes">
+    <interfaceobjectclass id="_ve4gkJ5CEeiCC7bRkv877Q" Name="BusStop_Attr" semantics="A bus stop with a name">
+      <interfacedata id="_yuRNsJ5CEeiCC7bRkv877Q" Name="busStopName">
+        <dataTypeDescriptions>represented as String</dataTypeDescriptions>
+      </interfacedata>
+    </interfaceobjectclass>
+  </assemblyinterface>
+  <assemblyinterface id="_42S74Z5CEeiCC7bRkv877Q" Name="BusStopRegisterInteraction">
+    <interfaceoperation id="_0b2ksaX0EeioWteD-iW6lA" Name="RegisterHumanAtBusStop">
+      <interfaceparameter id="_lXw8sKewEeiYJtdntXK3bQ" Name="humanName"/>
+      <interfaceparameter id="_nCmt4aewEeiYJtdntXK3bQ" Name="busStopName"/>
+    </interfaceoperation>
+  </assemblyinterface>
+  <assemblyinterface id="_DJIRcKX1EeioWteD-iW6lA" Name="HumanCollected">
+    <interfaceobjectclass id="_EwbmcKX1EeioWteD-iW6lA" Name="Human_Coll">
+      <interfacedata id="_GjQ2AKX1EeioWteD-iW6lA" Name="collected">
+        <dataTypeDescriptions>Describes the destination of the human</dataTypeDescriptions>
+      </interfacedata>
+    </interfaceobjectclass>
+  </assemblyinterface>
+</InterfaceDefinition:InterfaceRepository>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationFeature:SimulationFeature xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:SimulationFeature="edu.kit.ipd.sdq.Modularization.SimulationFeature" xmlns:DataTypes="edu.kit.ipd.sdq.Modularization.DataRepresentation.DataTypes" xmlns:SimulationInformation="edu.kit.ipd.sdq.Modularization.DataRepresentation.SimulationInformation" id="_gWMtcJO-Eei2D-ymkiAt9g" Name="BusSim">
+  <simulationDescription id="_OI5fMJ41EeieTJym-jlZmw">
+    <simulationdata xsi:type="SimulationInformation:ObjectOrientedViewSimulationData" id="_PeiccJ41EeieTJym-jlZmw">
+      <objectclassoperation id="_morAwJ41EeieTJym-jlZmw" Name="registerHumanAtBusStop_BS" semantics="">
+        <parameters Name="HumanName_BS" dataType="_b8YgoZPWEeiwmfKwDOAOcQ"/>
+        <parameters Name="BusStopName_BS" dataType="_b8YgoZPWEeiwmfKwDOAOcQ"/>
+      </objectclassoperation>
+      <requireddataentry xsi:type="SimulationInformation:ReferencingRequiredOOEntry" id="_f2qdQp48EeicjIM4r8s6LQ" objectclassoperation="_morAwJ41EeieTJym-jlZmw" objectclass="_7ZvfJ545EeidEv4lQ_FuuQ"/>
+      <requireddataentry xsi:type="SimulationInformation:ReferencingRequiredOOEntry" id="_urNPop48EeicjIM4r8s6LQ" objectclass="_IdFuw548EeicjIM4r8s6LQ">
+        <data id="_5kfGUJ48EeicjIM4r8s6LQ" Name="Destination_BS" semantics="The Destination of the BusStop as String" datatype="_b8YgoZPWEeiwmfKwDOAOcQ"/>
+        <data id="__LM3MJ48EeicjIM4r8s6LQ" Name="HumanName_BS" semantics="" datatype="_b8YgoZPWEeiwmfKwDOAOcQ"/>
+      </requireddataentry>
+      <objectclass id="_rFAMs542EeieTJym-jlZmw" Name="Bus_BS">
+        <data id="_oxlNcKeKEeiYJtdntXK3bQ" Name="BusName_BS" datatype="_b8YgoZPWEeiwmfKwDOAOcQ"/>
+      </objectclass>
+      <objectclass id="_7ZvfJ545EeidEv4lQ_FuuQ" Name="BusStop_BS" objectclassoperation="_morAwJ41EeieTJym-jlZmw" referencingrequiredooentry="_f2qdQp48EeicjIM4r8s6LQ">
+        <data id="_9y_ZAJ46EeicjIM4r8s6LQ" Name="BusStopName_BS"/>
+      </objectclass>
+      <objectclass id="_IdFuw548EeicjIM4r8s6LQ" Name="Human_BS" referencingrequiredooentry="_urNPop48EeicjIM4r8s6LQ">
+        <data id="_cbfW4J48EeicjIM4r8s6LQ" Name="collected_BS" datatype="_2r22gaVGEeiuNYKvMwv4lw"/>
+      </objectclass>
+    </simulationdata>
+  </simulationDescription>
+  <dataTypeContainer id="_OqqvgZ41EeieTJym-jlZmw" Name="BusSim_DTC">
+    <unittypecontainer id="_ym4aEJO_Eei2D-ymkiAt9g" Name="BusDuration" unit="_tt8VMpO_Eei2D-ymkiAt9g _Gh-skqVFEeiuNYKvMwv4lw _db5gEqVEEeiuNYKvMwv4lw"/>
+    <datatype xsi:type="DataTypes:EnumType" id="_J2mec5O_Eei2D-ymkiAt9g" Name="BusState">
+      <enumliteral id="_lDH_Rp41EeieTJym-jlZmw" literalName="LOADING_PASSENGERS"/>
+      <enumliteral id="_lDH_R541EeieTJym-jlZmw" literalName="TRAVELLING" literalValue="1"/>
+      <enumliteral id="_lDH_SJ41EeieTJym-jlZmw" literalName="ARRIVED" literalValue="2"/>
+      <enumliteral id="_lDH_SZ41EeieTJym-jlZmw" literalName="UNLOADING_PASSENGERS" literalValue="3"/>
+    </datatype>
+    <datatype xsi:type="DataTypes:Unit" id="_tt8VMpO_Eei2D-ymkiAt9g" Name="second" semantics="" basedatatype="_kHIB8aVEEeiuNYKvMwv4lw" unitSymbol="s" unittypecontainer="_ym4aEJO_Eei2D-ymkiAt9g"/>
+    <datatype xsi:type="DataTypes:Unit" id="_db5gEqVEEeiuNYKvMwv4lw" Name="minute" semantics="" basedatatype="_kHIB8aVEEeiuNYKvMwv4lw" unitSymbol="min" unittypecontainer="_ym4aEJO_Eei2D-ymkiAt9g"/>
+    <datatype xsi:type="DataTypes:Unit" id="_Gh-skqVFEeiuNYKvMwv4lw" Name="hour" semantics="" basedatatype="_kHIB8aVEEeiuNYKvMwv4lw" unitSymbol="h" unittypecontainer="_ym4aEJO_Eei2D-ymkiAt9g"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_Rh9QVJ_jEeiBSr1jVNFitg" Name="BusByte[]" semantics="" classicaldatatype="_Nb4y0Z_jEeiBSr1jVNFitg"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_b8YgoZPWEeiwmfKwDOAOcQ" Name="BusString" semantics="" stepSize="1" initialValue="&quot;&quot;" primitiveDataType="STRING"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_Nb4y0Z_jEeiBSr1jVNFitg" Name="BusByte" initialValue="" primitiveDataType="BYTE"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_kHIB8aVEEeiuNYKvMwv4lw" Name="BusDouble" semantics="" stepSize="" initialValue="" primitiveDataType="DOUBLE"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_HvAD4aVGEeiuNYKvMwv4lw" Name="BusInt" primitiveDataType="INTEGER"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_2r22gaVGEeiuNYKvMwv4lw" Name="BusBoolean" initialValue=""/>
+  </dataTypeContainer>
+  <basicsimulationcomponent href="HumanSim.modularsimulationassembly#_99X_dp67EeiQXuhq8OvXXA"/>
+</SimulationFeature:SimulationFeature>

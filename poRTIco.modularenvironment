@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModularEnvironment:Coordinator xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Annotations="edu.kit.ipd.sdq.Modularization.Annotations" xmlns:DataTypes="edu.kit.ipd.sdq.Modularization.DataRepresentation.DataTypes" xmlns:ModularEnvironment="edu.kit.ipd.sdq.Modularization.ModularEnvironment" id="_fBdjUJ4rEeit6tLJby_Vyw" Name="poRTIco">
+  <msecomponent href="HumanSim.modularsimulationassembly#_FX4O4J7MEei-mtJnAA73Zg"/>
+  <managementservice id="_DlQisI_OEeidsK6u7bOs4Q" Name="Federation Management">
+    <managementservicefunction id="_Fo2LEY_OEeidsK6u7bOs4Q" Name="connect" exception="_EkWJwI8hEeicG57COrH0bg _69zQ0I8hEeicG57COrH0bg _MDtzcI8jEeicG57COrH0bg _e44C8I8gEeicG57COrH0bg _CoKw8I8hEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="localSettingsDesignator" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_O0rBcY_OEeidsK6u7bOs4Q" Name="connect" exception="_EkWJwI8hEeicG57COrH0bg _69zQ0I8hEeicG57COrH0bg _MDtzcI8jEeicG57COrH0bg _e44C8I8gEeicG57COrH0bg _CoKw8I8hEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_TJY-8Y_OEeidsK6u7bOs4Q" Name="disconnect" exception="_bTeNEI8hEeicG57COrH0bg _CoKw8I8hEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_qhwzkY_OEeidsK6u7bOs4Q" Name="createFederationExecution" exception="_F0aqgI8hEeicG57COrH0bg _rt-3sI8hEeicG57COrH0bg _S44mYI8hEeicG57COrH0bg _LqUG4I8hEeicG57COrH0bg _ULhS8I8hEeicG57COrH0bg _NXpLYI8hEeicG57COrH0bg _RKhAEI8hEeicG57COrH0bg _k-uxcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="federationExecutionName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="fomModules"/>
+      <parameters Name="mimModule"/>
+      <parameters Name="logicalTimeImplementationName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_44_X0Y_OEeidsK6u7bOs4Q" Name="createFederationExecution" exception="_F0aqgI8hEeicG57COrH0bg _rt-3sI8hEeicG57COrH0bg _S44mYI8hEeicG57COrH0bg _LqUG4I8hEeicG57COrH0bg _k-uxcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="federationExecutionName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="fomModules"/>
+      <parameters Name="logicalTimeImplementationName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_FNnyMY_PEeidsK6u7bOs4Q" Name="createFederationExecution" exception="_rt-3sI8hEeicG57COrH0bg _S44mYI8hEeicG57COrH0bg _LqUG4I8hEeicG57COrH0bg _NXpLYI8hEeicG57COrH0bg _RKhAEI8hEeicG57COrH0bg _k-uxcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="federationExecutionName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="fomModules"/>
+      <parameters Name="mimModule"/>
+    </managementservicefunction>
+    <managementservicefunction id="_PT2bUY_PEeidsK6u7bOs4Q" Name="createFederationExecution" exception="_rt-3sI8hEeicG57COrH0bg _S44mYI8hEeicG57COrH0bg _LqUG4I8hEeicG57COrH0bg _k-uxcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="federationExecutionName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="fomModules"/>
+    </managementservicefunction>
+    <managementservicefunction id="_XTGw4Y_PEeidsK6u7bOs4Q" Name="createFederationExecution" exception="_rt-3sI8hEeicG57COrH0bg _S44mYI8hEeicG57COrH0bg _LqUG4I8hEeicG57COrH0bg _k-uxcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="federationExecutionName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="fomModule"/>
+    </managementservicefunction>
+    <managementservicefunction id="_gU3FQY_PEeidsK6u7bOs4Q" Name="destroyFederationExecution" exception="_guMwYI8hEeicG57COrH0bg _mOQfoI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="federationExecutionName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_mZVJIY_PEeidsK6u7bOs4Q" Name="listFederationExecutions" exception="_goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_ucpfUY_PEeidsK6u7bOs4Q" Name="joinFederationExecution" exception="_F0aqgI8hEeicG57COrH0bg _cj7IUI8hEeicG57COrH0bg _mOQfoI8hEeicG57COrH0bg _LqUG4I8hEeicG57COrH0bg _S44mYI8hEeicG57COrH0bg _rt-3sI8hEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _CoKw8I8hEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="federateName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="federateType" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="federateExecutionName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="additionalFomModules"/>
+    </managementservicefunction>
+    <managementservicefunction id="_7W6WUY_PEeidsK6u7bOs4Q" Name="joinFederationExecution" exception="_F0aqgI8hEeicG57COrH0bg _mOQfoI8hEeicG57COrH0bg _LqUG4I8hEeicG57COrH0bg _S44mYI8hEeicG57COrH0bg _rt-3sI8hEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _CoKw8I8hEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="federateType" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="federateExecutionName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="additionalFomModules"/>
+    </managementservicefunction>
+    <managementservicefunction id="_IjTfIY_QEeidsK6u7bOs4Q" Name="joinFederationExecution" exception="_F0aqgI8hEeicG57COrH0bg _cj7IUI8hEeicG57COrH0bg _mOQfoI8hEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _CoKw8I8hEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="federateName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="federateType" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="federateExecutionName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_T-An4Y_QEeidsK6u7bOs4Q" Name="joinFederationExecution" exception="_F0aqgI8hEeicG57COrH0bg _mOQfoI8hEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _CoKw8I8hEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription="">
+      <parameters Name="federateType" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="federateExecutionName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_nqn8cY_QEeidsK6u7bOs4Q" Name="resignFederationExecution" exception="_LqScQI8iEeicG57COrH0bg _s4zPkI8iEeicG57COrH0bg _fi4MwI8hEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _CoKw8I8hEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="synchronizationPointLabel" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_zxKQcY_QEeidsK6u7bOs4Q" Name="registerFederationSynchronizationPoint" exception="_-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="synchronizationPointLabel" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_2stbkY_QEeidsK6u7bOs4Q" Name="registerFederationSynchronizationPoint" exception="_4Z-CII8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="synchronizationPointLabel" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_5iqVAY_QEeidsK6u7bOs4Q" Name="synchronizationPointAchieved" exception="_CxSl0I8jEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="synchronizationPointLabel" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_85GFUY_QEeidsK6u7bOs4Q" Name="synchronizationPointAchieved" exception="_CxSl0I8jEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="synchronizationPointLabel" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="successIndicator" dataType="_Q6SKsY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_AfJmAY_REeidsK6u7bOs4Q" Name="requestFederationSave" exception="_-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="label" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_DV8M8Y_REeidsK6u7bOs4Q" Name="requestFederationSave" exception="_VGOyQI8iEeicG57COrH0bg _8ZnHgI8hEeicG57COrH0bg _jqx2QI8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="label" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_IYrHAY_REeidsK6u7bOs4Q" Name="federateSaveBegun" exception="__4PVEI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_MyHMcY_REeidsK6u7bOs4Q" Name="federateSaveComplete" exception="_ZTVhUI8hEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_QmVE8Y_REeidsK6u7bOs4Q" Name="federateSaveNotComplete" exception="_ZTVhUI8hEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_U42qEY_REeidsK6u7bOs4Q" Name="abortFederationSave" exception="_BccSwI8jEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription=""/>
+    <managementservicefunction id="_bpl-EY_REeidsK6u7bOs4Q" Name="queryFederationSaveStatus" exception="_3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_g3pXUY_REeidsK6u7bOs4Q" Name="requestFederationRestore" exception="_-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="label" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_nYpmMY_REeidsK6u7bOs4Q" Name="federateRestoreComplete" exception="_6c7i8I8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_veivQY_REeidsK6u7bOs4Q" Name="federateRestoreNotComplete" exception="_6c7i8I8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_1zXjUY_REeidsK6u7bOs4Q" Name="abortFederationRestore" exception="_4PVqAI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_78HDM4_REeidsK6u7bOs4Q" Name="queryFederationRestoreStatus" exception="_-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_TL70MZCgEeizmvAWlfhMkw" Name="connectionLost" semantics="" exception="_akWdQI8hEeicG57COrH0bg" printableDescription="">
+      <parameters Name="faultDescription" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_c9cKgZCgEeizmvAWlfhMkw" Name="reportFederationExecutions" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_fKG2YZCgEeizmvAWlfhMkw" Name="synchronizationPointRegistrationSucceeded" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="synchronizationPointLabel" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_mye9AZCgEeizmvAWlfhMkw" Name="synchronizationPointRegistrationFailed" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="synchronizationPointLabel" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_qH6nwZCgEeizmvAWlfhMkw" Name="announceSynchronizationPoint" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="synchronizationPointLabel" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_xVjTIZCgEeizmvAWlfhMkw" Name="federationSynchronized" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="synchronizationPointLabel" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_0h7IgZCgEeizmvAWlfhMkw" Name="initiateFederateSave" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="label" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_7GxVkZCgEeizmvAWlfhMkw" Name="initiateFederateSave" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="label" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="time" dataType="_c2hoUY8uEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_BjEDkZChEeizmvAWlfhMkw" Name="federationSaved" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_DhPAcZChEeizmvAWlfhMkw" Name="federationNotSaved" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_GEGl0ZChEeizmvAWlfhMkw" Name="federationSaveStatusResponse" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_IcpxkZChEeizmvAWlfhMkw" Name="requestFederationRestoreSucceeded" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="label" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_NDCG0ZChEeizmvAWlfhMkw" Name="requestFederationRestoreFailed" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="label" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_Qkh3oZChEeizmvAWlfhMkw" Name="federationRestoreBegun" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_TP88EZChEeizmvAWlfhMkw" Name="initiateFederateRestore" exception="_akWdQI8hEeicG57COrH0bg" printableDescription="">
+      <parameters Name="label" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+      <parameters Name="federateName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_axxuwZChEeizmvAWlfhMkw" Name="federationRestored" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_cU8xsZChEeizmvAWlfhMkw" Name="federationNotRestored" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_ftXfAZChEeizmvAWlfhMkw" Name="federationRestoreStatusResponse" exception="_akWdQI8hEeicG57COrH0bg"/>
+  </managementservice>
+  <managementservice id="_V5yoEI8gEeicG57COrH0bg" Name="Declaration Service">
+    <managementservicefunction id="_DbFWcY8zEeiJqJJeKaBsIw" Name="publishObjectClassAttributes" semantics="The information provided by the joined federate via the Publish Object Class Attributes service shall be used" exception="_xUvhUI8gEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription="With this function, attributes of an object class can be published">
+      <precondition description="The federate is connected to the RTI."/>
+      <precondition description="The federation execution exists."/>
+      <precondition description="The federate is joined to that federation execution."/>
+      <precondition description="The specified object class is defined in the FDD."/>
+      <precondition description="The specified class attributes are available attributes of the specified object class."/>
+      <precondition description="Federate save not in progress."/>
+      <precondition description="Federate restore not in progress."/>
+      <parameters Name="theObjectClass" dataType="_EY8Z4aX9EeioWteD-iW6lA"/>
+      <parameters Name="attributeList" dataType="_1ussso83EeimvNDjScjahQ"/>
+      <postcondition description="The specified class attributes shall now be published attributes of the specified object class for the"/>
+      <postcondition description="If at least one attribute of the specified class is published by the joined federate, it may register"/>
+      <postcondition description="If at least one attribute of the specified class is published by the joined federate, the"/>
+      <postcondition description="The joined federate may own instance attributes that correspond to the specified class attributes."/>
+    </managementservicefunction>
+    <managementservicefunction id="_V1EocY_WEeidsK6u7bOs4Q" Name="unpublishObjectClass" exception="_s4zPkI8iEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_TurUMY9IEeijo84HWAGaqg" Name="unpublishObjectClassAttributes" exception="_s4zPkI8iEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription=""/>
+    <managementservicefunction id="_ft5p0o9JEeijo84HWAGaqg" Name="publishInteractionClass" exception="_ulbl8I8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_3QLBUo9JEeijo84HWAGaqg" Name="unpublishInteractionClass" exception="_ulbl8I8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_KWX2Io9KEeijo84HWAGaqg" Name="subscribeObjectClassAttributes" exception="_xUvhUI8gEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_fxJQAY_WEeidsK6u7bOs4Q" Name="subscribeObjectClassAttributes" exception="_xUvhUI8gEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _TKmzEI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_t4uUUo9KEeijo84HWAGaqg" Name="subscribeObjectClassAttributesPassively" exception="_xUvhUI8gEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription=""/>
+    <managementservicefunction id="_luyTIY_WEeidsK6u7bOs4Q" Name="subscribeObjectClassAttributesPassively" exception="_xUvhUI8gEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _TKmzEI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_3208Mo9KEeijo84HWAGaqg" Name="unsubscribeObjectClass" exception="_hyfCcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_tZQEcY_WEeidsK6u7bOs4Q" Name="unsubscribeObjectClassAttributes" exception="_xUvhUI8gEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_Y--o0Y9LEeijo84HWAGaqg" Name="subscribeInteractionClass" exception="_iVgscI8hEeicG57COrH0bg _ulbl8I8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_tz2l8o9LEeijo84HWAGaqg" Name="subscribeInteractionClassPassively" exception="_iVgscI8hEeicG57COrH0bg _ulbl8I8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_8KO1oY9LEeijo84HWAGaqg" Name="unsubscribeInteractionClass" exception="_ulbl8I8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_BEteMZCiEeizmvAWlfhMkw" Name="startRegistrationForObjectClass" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_EOboMZCiEeizmvAWlfhMkw" Name="stopRegistrationForObjectClass" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_GRvjwZCiEeizmvAWlfhMkw" Name="turnInteractionsOn" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_G0KUUZCiEeizmvAWlfhMkw" Name="turnInteractionsOff" exception="_akWdQI8hEeicG57COrH0bg"/>
+  </managementservice>
+  <managementservice id="_Y7BK4I_EEeispuRj0H_YTw" Name="Object Management">
+    <managementservicefunction id="_A5ULwY_MEeidsK6u7bOs4Q" Name="reserveObjectInstanceName" exception="_ngBpgI8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription="">
+      <parameters Name="theObjectName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_Hkr3kY_MEeidsK6u7bOs4Q" Name="releaseObjectInstanceName" exception="_qWuUYI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theObjectInstanceName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_LdD3UY_MEeidsK6u7bOs4Q" Name="reserveMultipleObjectInstanceName" exception="_ngBpgI8hEeicG57COrH0bg _ZqAfcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theObjectNames"/>
+    </managementservicefunction>
+    <managementservicefunction id="_RxxWoY_MEeidsK6u7bOs4Q" Name="releaseMultipleObjectInstanceName" exception="_qWuUYI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theObjectNames"/>
+    </managementservicefunction>
+    <managementservicefunction id="_UrZPIY_MEeidsK6u7bOs4Q" Name="registerObjectInstance" exception="_jOiJsI8iEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_alX6QY_MEeidsK6u7bOs4Q" Name="registerObjectInstance" exception="_o64BcI8iEeicG57COrH0bg _qWuUYI8iEeicG57COrH0bg _jOiJsI8iEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription="">
+      <parameters Name="theObjectName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_he8aIY_MEeidsK6u7bOs4Q" Name="updateAttributeValues" exception="_zIvOgI8gEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_nhDGgY_MEeidsK6u7bOs4Q" Name="updateAttributeValues" exception="_8ZnHgI8hEeicG57COrH0bg _zIvOgI8gEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_vhWk8Y_MEeidsK6u7bOs4Q" Name="sendInteraction" exception="_vzTHQI8hEeicG57COrH0bg _w8xQwI8hEeicG57COrH0bg _ulbl8I8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_0r0esY_MEeidsK6u7bOs4Q" Name="sendInteraction" exception="_8ZnHgI8hEeicG57COrH0bg _vzTHQI8hEeicG57COrH0bg _w8xQwI8hEeicG57COrH0bg _ulbl8I8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_8M0yAY_MEeidsK6u7bOs4Q" Name="deleteObjectInstance" exception="_PiLwUI8hEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_CAR-YY_NEeidsK6u7bOs4Q" Name="deleteObjectInstance" exception="_8ZnHgI8hEeicG57COrH0bg _PiLwUI8hEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_NIqBAY_NEeidsK6u7bOs4Q" Name="localDeleteObjectInstance" exception="_s4zPkI8iEeicG57COrH0bg _fi4MwI8hEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_So-2AY_NEeidsK6u7bOs4Q" Name="requestAttributeValueUpdate" exception="_xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription="">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_XFEm0Y_NEeidsK6u7bOs4Q" Name="requestAttributeValueUpdate" exception="_xUvhUI8gEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_bRlqkY_NEeidsK6u7bOs4Q" Name="requestAttributeTransportationTypeChange" exception="_pFlukI8gEeicG57COrH0bg _zIvOgI8gEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _RkvBcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_kloBwY_NEeidsK6u7bOs4Q" Name="queryAttributeTransportationType" exception="_xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_pEWP0Y_NEeidsK6u7bOs4Q" Name="requestInteractionTransportationTypeChange" exception="_sh_HgI8hEeicG57COrH0bg _vzTHQI8hEeicG57COrH0bg _ulbl8I8hEeicG57COrH0bg _RkvBcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_vMaaQY_NEeidsK6u7bOs4Q" Name="queryInteractionTransportationType" exception="_ulbl8I8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_RMy8EZCiEeizmvAWlfhMkw" Name="objectInstanceNameReservationSucceeded" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="objectName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_Xj2kwZCiEeizmvAWlfhMkw" Name="objectInstanceNameReservationFailed" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="objectName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_aLxCMZCiEeizmvAWlfhMkw" Name="multipleObjectInstanceNameReservationSucceeded" exception="_akWdQI8hEeicG57COrH0bg" printableDescription="">
+      <parameters Name="objectNames"/>
+    </managementservicefunction>
+    <managementservicefunction id="_i_apIZCiEeizmvAWlfhMkw" Name="multipleObjectInstanceNameReservationFailed" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="objectNames"/>
+    </managementservicefunction>
+    <managementservicefunction id="_lbd00ZCiEeizmvAWlfhMkw" Name="discoverObjectInstance" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="objectName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_of_80ZCiEeizmvAWlfhMkw" Name="discoverObjectInstance" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="objectName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_zvWKIZCiEeizmvAWlfhMkw" Name="reflectAttributeValues" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_5ou_YZCiEeizmvAWlfhMkw" Name="reflectAttributeValues" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_-QGMEZCiEeizmvAWlfhMkw" Name="reflectAttributeValues" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+      <parameters Name="theTime" dataType="_c2hoUY8uEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_KFgT0ZCjEeizmvAWlfhMkw" Name="receiveInteraction" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+      <parameters Name="sentOrdering"/>
+    </managementservicefunction>
+    <managementservicefunction id="_PltNAZCjEeizmvAWlfhMkw" Name="receiveInteraction" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+      <parameters Name="sentOrdering"/>
+      <parameters Name="theTime" dataType="_c2hoUY8uEeirK4EdHqw1RA"/>
+      <parameters Name="receivedOrdering"/>
+    </managementservicefunction>
+    <managementservicefunction id="_v-bn0ZCjEeizmvAWlfhMkw" Name="receiveInteraction" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+      <parameters Name="sentOrdering"/>
+      <parameters Name="theTime" dataType="_c2hoUY8uEeirK4EdHqw1RA"/>
+      <parameters Name="receivedOrdering"/>
+    </managementservicefunction>
+    <managementservicefunction id="_0gy_wZCjEeizmvAWlfhMkw" Name="removeObjectInstance" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+      <parameters Name="sentOrdering"/>
+    </managementservicefunction>
+    <managementservicefunction id="_5PIXIZCjEeizmvAWlfhMkw" Name="removeObjectInstance" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+      <parameters Name="sentOrdering"/>
+      <parameters Name="theTime" dataType="_c2hoUY8uEeirK4EdHqw1RA"/>
+      <parameters Name="receivedOrdering"/>
+    </managementservicefunction>
+    <managementservicefunction id="_8mvMIZCjEeizmvAWlfhMkw" Name="removeObjectInstance" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+      <parameters Name="sentOrdering"/>
+      <parameters Name="theTime" dataType="_c2hoUY8uEeirK4EdHqw1RA"/>
+      <parameters Name="receivedOrdering"/>
+    </managementservicefunction>
+    <managementservicefunction id="_CGQI0ZCkEeizmvAWlfhMkw" Name="attributesInScope" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_D9rkgZCkEeizmvAWlfhMkw" Name="attributesOutOfScope" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_E1VlQZCkEeizmvAWlfhMkw" Name="provideAttributeValueUpdate" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_H8h_sZCkEeizmvAWlfhMkw" Name="turnUpdatesOnForObjectInstance" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_JoqxYZCkEeizmvAWlfhMkw" Name="turnUpdatesOnForObjectInstance" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="updateRateDesignator" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_PkJ4YZCkEeizmvAWlfhMkw" Name="turnUpdatesOffForObjectInstance" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_R1zx8ZCkEeizmvAWlfhMkw" Name="confirmAttributeTransportationTypeChange" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_Thq20ZCkEeizmvAWlfhMkw" Name="reportAttributeTransportationType"/>
+    <managementservicefunction id="_UOjyAZCkEeizmvAWlfhMkw" Name="confirmInteractionTransportationTypeChange" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_VpLV4ZCkEeizmvAWlfhMkw" Name="reportInteractionTransportationType" exception="_akWdQI8hEeicG57COrH0bg"/>
+  </managementservice>
+  <managementservice id="_fg1W0I9MEeijo84HWAGaqg" Name="Ownership Service" annotation="__QluIo9BEeiN3uMSM_ELLw">
+    <managementservicefunction id="_lxT2YY9MEeijo84HWAGaqg" Name="unconditionalAttributeOwnershipDivestiture" exception="_zIvOgI8gEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription=""/>
+    <managementservicefunction id="_XdmDsY9NEeijo84HWAGaqg" Name="negotiatedAttributeOwnershipDivestiture" exception="_rSRokI8gEeicG57COrH0bg _zIvOgI8gEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_eSZG8o--EeispuRj0H_YTw" Name="confirmDivestiture" exception="_bGedcI8iEeicG57COrH0bg _ueGEUI8gEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _zIvOgI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription="">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_GJ4Dso9OEeijo84HWAGaqg" Name="attributeOwnershipAcquisition" exception="_z7XlUI8gEeicG57COrH0bg _jOiJsI8iEeicG57COrH0bg _fi4MwI8hEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+      <parameters Name="theObject" dataType="_EY8Z4aX9EeioWteD-iW6lA"/>
+      <parameters Name="desiredAttributes" dataType="_1ussso83EeimvNDjScjahQ"/>
+    </managementservicefunction>
+    <managementservicefunction id="_haQEoo9OEeijo84HWAGaqg" Name="attributeOwnershipAcquisitionIfAvailable" exception="_oEs5UI8gEeicG57COrH0bg _z7XlUI8gEeicG57COrH0bg _jOiJsI8iEeicG57COrH0bg _fi4MwI8hEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_8leq8o--EeispuRj0H_YTw" Name="attributeOwnershipReleaseDenied" exception="_zIvOgI8gEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_MI5Vgo-_EeispuRj0H_YTw" Name="attributeOwnershipDivestitureIfWanted" exception="_zIvOgI8gEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_lIT1Uo9PEeijo84HWAGaqg" Name="cancelNegotiatedAttributeOwnershipDivestiture" exception="_CSrlII9NEeijo84HWAGaqg _xUvhUI8gEeicG57COrH0bg _zIvOgI8gEeicG57COrH0bg _ueGEUI8gEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_dEQDYo-_EeispuRj0H_YTw" Name="cancelAttributeOwnershipAcquisition" exception="_xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_jBNKAo-_EeispuRj0H_YTw" Name="queryAttributeOwnership" exception="_xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_oP3AMo-_EeispuRj0H_YTw" Name="isAttributeOwnedByFederate" exception="_xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_znj1MZCkEeizmvAWlfhMkw" Name="requestAttributeOwnershipAssumption" semantics="" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_6qBLUZCkEeizmvAWlfhMkw" Name="requestDivestitureConfirmation" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_AE6GsZClEeizmvAWlfhMkw" Name="attributeOwnershipAcquisitionNotification" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_BhmHIZClEeizmvAWlfhMkw" Name="attributeOwnershipUnavailable" exception="_akWdQI8hEeicG57COrH0bg" printableDescription=""/>
+    <managementservicefunction id="_MAGGUZClEeizmvAWlfhMkw" Name="requestAttributeOwnershipRelease" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_OeGZ0ZClEeizmvAWlfhMkw" Name="confirmAttributeOwnershipAcquisitionCancellation" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_QbALYZClEeizmvAWlfhMkw" Name="informAttributeOwnership" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_SkPIwZClEeizmvAWlfhMkw" Name="attributeIsNotOwned" exception="_akWdQI8hEeicG57COrH0bg"/>
+    <managementservicefunction id="_UCOJsZClEeizmvAWlfhMkw" Name="attributeIsOwnedByRTI" exception="_akWdQI8hEeicG57COrH0bg" printableDescription=""/>
+  </managementservice>
+  <managementservice id="_633MoI88EeimvNDjScjahQ" Name="Time Management">
+    <managementservicesupportentity id="_9A7K4I88EeimvNDjScjahQ" Name="Time Manager" purpose="Keeps time related information for each federate and calculates the time"/>
+    <managementservicefunction id="_EWJ8gY_AEeispuRj0H_YTw" Name="enableTimeRegulation" exception="__gBe0I8hEeicG57COrH0bg _05ZeYI8hEeicG57COrH0bg _1pZigI8iEeicG57COrH0bg _GqfE8I8jEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theLookahead" dataType="_qlsuEY8uEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_NbV_Yo_AEeispuRj0H_YTw" Name="disableTimeRegulation" exception="_H9j2YI8jEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_QufyMo_AEeispuRj0H_YTw" Name="enableTimeConstrained" exception="_05ZeYI8hEeicG57COrH0bg _y5HzQI8iEeicG57COrH0bg _EZBYoI8jEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_YDxWoo_AEeispuRj0H_YTw" Name="disableTimeConstrained" exception="_FeVa4I8jEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_W89PEY89EeimvNDjScjahQ" Name="timeAdvanceRequest" exception="_VGOyQI8iEeicG57COrH0bg _8ZnHgI8hEeicG57COrH0bg _05ZeYI8hEeicG57COrH0bg _1pZigI8iEeicG57COrH0bg _y5HzQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theTime" dataType="_c2hoUY8uEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_kA8TQo_AEeispuRj0H_YTw" Name="timeAdvanceRequestAvailable" exception="_VGOyQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theLookahead" dataType="_qlsuEY8uEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_rN0wso_AEeispuRj0H_YTw" Name="nextMessageRequest" exception="_VGOyQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theLookahead" dataType="_qlsuEY8uEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_v8Hr0o_AEeispuRj0H_YTw" Name="nextMessageRequestAvailable" exception="_VGOyQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theLookahead" dataType="_qlsuEY8uEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_zsDhQo_AEeispuRj0H_YTw" Name="flushQueueRequest" exception="_VGOyQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theLookahead" dataType="_qlsuEY8uEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_4Lyb8Y_AEeispuRj0H_YTw" Name="enableAsynchronousDelivery" exception="_jpYkkI8gEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_7eAaoo_AEeispuRj0H_YTw" Name="disableAsynchronousDelivery" exception="_h_oYgI8gEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="__ZPhIo_AEeispuRj0H_YTw" Name="queryGALT" exception="_-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription=""/>
+    <managementservicefunction id="_D8kiYo_BEeispuRj0H_YTw" Name="queryLogicalTime" exception="_-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_G8Qmoo_BEeispuRj0H_YTw" Name="queryLITS" exception="_-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_KrlYEo_BEeispuRj0H_YTw" Name="modifyLookahead" exception="__gBe0I8hEeicG57COrH0bg _05ZeYI8hEeicG57COrH0bg _H9j2YI8jEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theLookahead" dataType="_qlsuEY8uEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_Qu17Ao_BEeispuRj0H_YTw" Name="queryLookahead" exception="_H9j2YI8jEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription=""/>
+    <managementservicefunction id="_UjR18o_BEeispuRj0H_YTw" Name="retract" exception="_WyrtAI8iEeicG57COrH0bg _A_cqMI8iEeicG57COrH0bg _H9j2YI8jEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_ZlLCgo_BEeispuRj0H_YTw" Name="changeAttributeOrderType" exception="_zIvOgI8gEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_g2Qqgo_BEeispuRj0H_YTw" Name="changeInteractionOrderType" exception="_vzTHQI8hEeicG57COrH0bg _ulbl8I8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_10ejQZClEeizmvAWlfhMkw" Name="timeRegulationEnabled" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="time" dataType="_wRDj0Y8tEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_69z0kZClEeizmvAWlfhMkw" Name="timeConstrainedEnabled" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="time" dataType="_wRDj0Y8tEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_85NKQZClEeizmvAWlfhMkw" Name="timeAdvanceGrant" exception="_akWdQI8hEeicG57COrH0bg">
+      <parameters Name="time" dataType="_wRDj0Y8tEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="__ISQ8ZClEeizmvAWlfhMkw" Name="requestRetraction" exception="_akWdQI8hEeicG57COrH0bg" printableDescription=""/>
+  </managementservice>
+  <managementservice id="_pIZf0I_BEeispuRj0H_YTw" Name="Data Distribution Management">
+    <managementservicefunction id="_uPYAsY_BEeispuRj0H_YTw" Name="createRegion" exception="_3MAaMI8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_yGuswo_BEeispuRj0H_YTw" Name="commitRegionModifications" exception="_w0WfII8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_2KRaso_BEeispuRj0H_YTw" Name="deleteRegion" exception="_vVzdgI8iEeicG57COrH0bg _w0WfII8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_8diIgo_BEeispuRj0H_YTw" Name="registerObjectInstanceWithRegions" exception="_KeQuAI8iEeicG57COrH0bg _w0WfII8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _z7XlUI8gEeicG57COrH0bg _jOiJsI8iEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_MfRGwo_CEeispuRj0H_YTw" Name="registerObjectInstanceWithRegions" exception="_o64BcI8iEeicG57COrH0bg _qWuUYI8iEeicG57COrH0bg _KeQuAI8iEeicG57COrH0bg _w0WfII8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _z7XlUI8gEeicG57COrH0bg _jOiJsI8iEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theObject" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_aUo7Io_CEeispuRj0H_YTw" Name="associateRegionsForUpdates" exception="_KeQuAI8iEeicG57COrH0bg _w0WfII8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_hdVcIo_CEeispuRj0H_YTw" Name="unassociateRegionsForUpdates" exception="_w0WfII8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _rh7jQI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_WC_g8Y_cEeidsK6u7bOs4Q" Name="subscribeObjectClassAttributesWithRegions" exception="_JNPyEI8iEeicG57COrH0bg _w0WfII8iEeicG57COrH0bg _KeQuAI8iEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_o629oo_CEeispuRj0H_YTw" Name="subscribeObjectClassAttributesWithRegions" exception="_KeQuAI8iEeicG57COrH0bg _w0WfII8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="updateRateDesignator" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_jFuXcY_cEeidsK6u7bOs4Q" Name="subscribeObjectClassAttributesPassivelyWithRegions"/>
+    <managementservicefunction id="_p_hg0Y_cEeidsK6u7bOs4Q" Name="subscribeObjectClassAttributesPassivelyWithRegions" exception="_JNPyEI8iEeicG57COrH0bg _w0WfII8iEeicG57COrH0bg _KeQuAI8iEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _TKmzEI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="updateRateDesignator" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_7ROQ8o_CEeispuRj0H_YTw" Name="unsubscribeObjectClassAttributesWithRegions" exception="_w0WfII8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_EpQ-Yo_DEeispuRj0H_YTw" Name="subscribeInteractionClassWithRegions" exception="_iVgscI8hEeicG57COrH0bg _KeQuAI8iEeicG57COrH0bg _w0WfII8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _ulbl8I8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_Nyz80o_DEeispuRj0H_YTw" Name="subscribeInteractionClassPassivelyWithRegions" exception="_iVgscI8hEeicG57COrH0bg _KeQuAI8iEeicG57COrH0bg _w0WfII8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _ulbl8I8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_bIXoso_DEeispuRj0H_YTw" Name="unsubscribeInteractionClassWithRegions" exception="_w0WfII8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _ulbl8I8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_nve6Mo_DEeispuRj0H_YTw" Name="sendInteractionWithRegions" exception="_KeQuAI8iEeicG57COrH0bg _w0WfII8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _vzTHQI8hEeicG57COrH0bg _w8xQwI8hEeicG57COrH0bg _ulbl8I8hEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_UsnucY_dEeidsK6u7bOs4Q" Name="sendInteractionWithRegions" exception="_8ZnHgI8hEeicG57COrH0bg _KeQuAI8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _w0WfII8iEeicG57COrH0bg _ulbl8I8hEeicG57COrH0bg _vzTHQI8hEeicG57COrH0bg _w8xQwI8hEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+    <managementservicefunction id="_-mz3Qo_DEeispuRj0H_YTw" Name="requestAttributeValueUpdateWithRegions" exception="_KeQuAI8iEeicG57COrH0bg _w0WfII8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _hyfCcI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription="">
+      <parameters Name="userSuppliedTag" dataType="_SddKoo9NEeijo84HWAGaqg"/>
+    </managementservicefunction>
+  </managementservice>
+  <managementservice id="_PDlDUo_SEeidsK6u7bOs4Q" Name="RTI Support Service Management">
+    <managementservicefunction id="_SIDg8Y_SEeidsK6u7bOs4Q" Name="getAutomaticResignDirective" exception="_d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_XCIOQY_SEeidsK6u7bOs4Q" Name="setAutomaticResignDirective" exception="_LqScQI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_aERwoY_SEeidsK6u7bOs4Q" Name="getFederateHandle" exception="_Y8VhII8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_cwAXEY_SEeidsK6u7bOs4Q" Name="getFederateName" exception="_4Z-CII8hEeicG57COrH0bg _YIJgkI8hEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_hJp34Y_SEeidsK6u7bOs4Q" Name="getObjectClassHandle" exception="_Y8VhII8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_lX6oEY_SEeidsK6u7bOs4Q" Name="getObjectClassName" exception="_CiULIY8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_oCSjoY_SEeidsK6u7bOs4Q" Name="getKnownObjectClassHandle" exception="_rh7jQI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_rHKp4Y_SEeidsK6u7bOs4Q" Name="getObjectInstanceHandle" exception="_rh7jQI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_tvL1AY_SEeidsK6u7bOs4Q" Name="getObjectInstanceName" exception="_rh7jQI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_yu8TkY_SEeidsK6u7bOs4Q" Name="getAttributeHandle" exception="_Y8VhII8iEeicG57COrH0bg _CiULIY8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription="">
+      <parameters Name="theName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_2Ew_4Y_SEeidsK6u7bOs4Q" Name="getAttributeName" exception="_xUvhUI8gEeicG57COrH0bg _2GqiwI8hEeicG57COrH0bg _CiULIY8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_8OsykY_SEeidsK6u7bOs4Q" Name="getUpdateRateValue" exception="_TKmzEI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription="">
+      <parameters Name="updateRateDesignator" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_ADONEY_TEeidsK6u7bOs4Q" Name="getUpdateRateValueForAttribute" exception="_rh7jQI8iEeicG57COrH0bg _xUvhUI8gEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription=""/>
+    <managementservicefunction id="_GAAUkY_TEeidsK6u7bOs4Q" Name="getInteractionClassHandle" exception="_Y8VhII8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_Iw_OcY_TEeidsK6u7bOs4Q" Name="getInteractionClassName" exception="_5sRXgI8hEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_L6wbwY_TEeidsK6u7bOs4Q" Name="getParameterHandle" exception="_Y8VhII8iEeicG57COrH0bg _5sRXgI8hEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_PRpfEY_TEeidsK6u7bOs4Q" Name="getParameterName" exception="_w8xQwI8hEeicG57COrH0bg _G2sKYI8iEeicG57COrH0bg _5sRXgI8hEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_TtzhUY_TEeidsK6u7bOs4Q" Name="getOrderType" exception="_DtHKUI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription="">
+      <parameters Name="theName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_Wmm6cY_TEeidsK6u7bOs4Q" Name="getOrderName" exception="_FaeEAI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_Ys5RgY_TEeidsK6u7bOs4Q" Name="getTransportationTypeHandle" exception="_PkavgY8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_cpb_kY_TEeidsK6u7bOs4Q" Name="getTransportationTypeName"/>
+    <managementservicefunction id="_fHbE8Y_TEeidsK6u7bOs4Q" Name="getAvailableDimensionsForClassAttribute" exception="_xUvhUI8gEeicG57COrH0bg _2GqiwI8hEeicG57COrH0bg _CiULIY8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_kTxOAY_TEeidsK6u7bOs4Q" Name="getAvailableDimensionsForInteractionClass" exception="_5sRXgI8hEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_oGIsYY_TEeidsK6u7bOs4Q" Name="getDimensionHandle" exception="_Y8VhII8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="theName" dataType="_wPPbYY8sEeirK4EdHqw1RA"/>
+    </managementservicefunction>
+    <managementservicefunction id="_qliuEY_TEeidsK6u7bOs4Q" Name="getDimensionName" exception="_3MAaMI8hEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_tiMscY_TEeidsK6u7bOs4Q" Name="getDimensionUpperBound" exception="_3MAaMI8hEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription=""/>
+    <managementservicefunction id="_wL55oY_TEeidsK6u7bOs4Q" Name="getDimensionHandleSet" exception="_JNPyEI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription=""/>
+    <managementservicefunction id="_0-CL4Y_TEeidsK6u7bOs4Q" Name="getRangeBounds" exception="_uD1fUI8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_7VWTQY_TEeidsK6u7bOs4Q" Name="setRangeBounds" exception="_H_BrcI8iEeicG57COrH0bg _uD1fUI8iEeicG57COrH0bg _w0WfII8iEeicG57COrH0bg _JNPyEI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_C46LUY_UEeidsK6u7bOs4Q" Name="normalizeFederateHandle" exception="_4Z-CII8hEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_FMia0Y_UEeidsK6u7bOs4Q" Name="normalizeServiceGroup" exception="_NpR4gI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_Hvs7IY_UEeidsK6u7bOs4Q" Name="enableObjectClassRelevanceAdvisorySwitch" exception="_nhkFII8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription=""/>
+    <managementservicefunction id="_MKRpAY_UEeidsK6u7bOs4Q" Name="disableObjectClassRelevanceAdvisorySwitch" exception="_lOiSkI8iEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_QEc_kY_UEeidsK6u7bOs4Q" Name="enableAttributeRelevanceAdvisorySwitch" exception="_9JI8cI8gEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_UBZWQY_UEeidsK6u7bOs4Q" Name="disableAttributeRelevanceAdvisorySwitch" exception="_7i5-cI8gEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_X5lv0Y_UEeidsK6u7bOs4Q" Name="enableAttributeScopeAdvisorySwitch" exception="_AwKtgI8hEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_eTAI8Y_UEeidsK6u7bOs4Q" Name="disableAttributeScopeAdvisorySwitch" exception="__UCGsI8gEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_jV0ikY_UEeidsK6u7bOs4Q" Name="enableInteractionRelevanceAdvisorySwitch" exception="_zbwbsI8hEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription=""/>
+    <managementservicefunction id="_nTTEwY_UEeidsK6u7bOs4Q" Name="disableInteractionRelevanceAdvisorySwitch" exception="_yQQ48I8hEeicG57COrH0bg _3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _d6ddcI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_rPMSkY_UEeidsK6u7bOs4Q" Name="evokeCallback" exception="_CoKw8I8hEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="approximateMinimumTimeInSeconds" dataType="_hj90kY8-EeimvNDjScjahQ"/>
+    </managementservicefunction>
+    <managementservicefunction id="_usPBMY_UEeidsK6u7bOs4Q" Name="evokeMultipleCallbacks" exception="_CoKw8I8hEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg">
+      <parameters Name="approximateMinimumTimeInSeconds" dataType="_hj90kY8-EeimvNDjScjahQ"/>
+      <parameters Name="approximateMaximumTimeInSeconds" dataType="_hj90kY8-EeimvNDjScjahQ"/>
+    </managementservicefunction>
+    <managementservicefunction id="_zu97QY_UEeidsK6u7bOs4Q" Name="enableCallbacks" exception="_3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg _9Jgd8I8iEeicG57COrH0bg" printableDescription=""/>
+    <managementservicefunction id="_4oBU4Y_UEeidsK6u7bOs4Q" Name="disableCallbacks" exception="_3C66MI8iEeicG57COrH0bg _-cfIwI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_-02DgY_UEeidsK6u7bOs4Q" Name="getAttributeHandleFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_Bzg0EY_VEeidsK6u7bOs4Q" Name="getAttributeHandleSetFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_EEfYMY_VEeidsK6u7bOs4Q" Name="getAttributeHandleValueMapFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_FXreYY_VEeidsK6u7bOs4Q" Name="getAttributeSetRegionSetPairListFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_Gqd78Y_VEeidsK6u7bOs4Q" Name="getDimensionHandleFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_HwTioY_VEeidsK6u7bOs4Q" Name="getDimensionHandleSetFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_I7DegY_VEeidsK6u7bOs4Q" Name="getFederateHandleFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_J-sFwY_VEeidsK6u7bOs4Q" Name="getFederateHandleSetFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_L_b1gY_VEeidsK6u7bOs4Q" Name="getInteractionClassHandleFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_M-_1EY_VEeidsK6u7bOs4Q" Name="getObjectClassHandleFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_N8CsIY_VEeidsK6u7bOs4Q" Name="getObjectInstanceHandleFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_O7yR4Y_VEeidsK6u7bOs4Q" Name="getParameterHandleFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_QPfVcY_VEeidsK6u7bOs4Q" Name="getParameterHandleValueMapFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_RZnmQY_VEeidsK6u7bOs4Q" Name="getRegionHandleSetFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_SQ8P0Y_VEeidsK6u7bOs4Q" Name="getTransportationTypeHandleFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+    <managementservicefunction id="_UkXrAY_VEeidsK6u7bOs4Q" Name="getHLAversion"/>
+    <managementservicefunction id="_VzGH8Y_VEeidsK6u7bOs4Q" Name="getTimeFactory" exception="_WryQQI8hEeicG57COrH0bg _goulEI8iEeicG57COrH0bg"/>
+  </managementservice>
+  <dataspecificationcontainer id="_KzOs4Y8sEeirK4EdHqw1RA" Name="poRTIco_DTC">
+    <datatype xsi:type="DataTypes:BaseDataType" id="_Q6SKsY8sEeirK4EdHqw1RA" Name="HLAboolean" semantics="" stepSize="1" initialValue="0" primitiveDataType="INTEGER">
+      <range lowerBounds="0" upperBounds="1"/>
+    </datatype>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_bZAMUY8sEeirK4EdHqw1RA" Name="HLAbyte" stepSize="1" initialValue="0" primitiveDataType="BYTE">
+      <range lowerBounds="0" upperBounds="255"/>
+    </datatype>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_f8Xp0Y8sEeirK4EdHqw1RA" Name="HLAfloat" stepSize="0.0000000001" initialValue="0" primitiveDataType="FLOAT"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_wPPbYY8sEeirK4EdHqw1RA" Name="HLAASCIIstring" initialValue="" primitiveDataType="CHAR"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_0xbNIY8sEeirK4EdHqw1RA" Name="HLAASCIIchar" semantics="" initialValue="" primitiveDataType="CHAR"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_wRDj0Y8tEeirK4EdHqw1RA" Name="HLAinteger32BE" primitiveDataType="INTEGER"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_56_5lI8tEeirK4EdHqw1RA" Name="HLAInt[]" semantics="Uses an array to represents a collection of integers" classicaldatatype="_wRDj0Y8tEeirK4EdHqw1RA"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_c2hoUY8uEeirK4EdHqw1RA" Name="HLAfloat64Time" semantics="Represents the time" initialValue="0" primitiveDataType="FLOAT"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_qlsuEY8uEeirK4EdHqw1RA" Name="HLAfloat64Interval" semantics="Describes a interval of time" primitiveDataType="FLOAT"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_1ussso83EeimvNDjScjahQ" Name="HandleSet" semantics="represents the handles to attributes"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_hj90kY8-EeimvNDjScjahQ" Name="HLAfloat64BE" primitiveDataType="DOUBLE"/>
+    <datatype xsi:type="DataTypes:DataTypeCollection" id="_SddKoo9NEeijo84HWAGaqg" Name="Byte[]" semantics="Byte Array" classicaldatatype="_bZAMUY8sEeirK4EdHqw1RA"/>
+    <datatype xsi:type="DataTypes:BaseDataType" id="_EY8Z4aX9EeioWteD-iW6lA" Name="Handle" primitiveDataType="INTEGER"/>
+  </dataspecificationcontainer>
+  <annotationcontainer id="_NdnDUp4xEeieTJym-jlZmw" Name="poRTIco_AC">
+    <annotation xsi:type="Annotations:MultipleSettableAnnotation" id="_nMO9oZ4xEeieTJym-jlZmw" Name="Sharing" OnlyusedInDefintion="false">
+      <annotationvalue id="_sce9oI87EeimvNDjScjahQ" Name="Publish"/>
+      <annotationvalue id="_s9jDUI87EeimvNDjScjahQ" Name="Subscribe"/>
+    </annotation>
+    <annotation xsi:type="Annotations:MultipleSettableAnnotation" id="__QluIo9BEeiN3uMSM_ELLw" Name="Ownership" OnlyusedInDefintion="false">
+      <annotationvalue id="_EAqK4I9CEeiN3uMSM_ELLw" Name="Divest"/>
+      <annotationvalue id="_GX0PgI9CEeiN3uMSM_ELLw" Name="Acquire"/>
+    </annotation>
+    <annotation xsi:type="Annotations:WritableAnnotation" id="_Pg8Mo49BEeimvNDjScjahQ" Name="UpdateCondition"/>
+    <annotation xsi:type="Annotations:WritableAnnotation" id="_ProkRI9CEeiN3uMSM_ELLw" Name="Dimension"/>
+    <annotation xsi:type="Annotations:ExclusiveSettableAnnotation" id="_PwKmUY8_EeimvNDjScjahQ" Name="UpdateType">
+      <annotationvalue id="_LxnbMI9BEeimvNDjScjahQ" Name="Static"/>
+      <annotationvalue id="_M0Gy8I9BEeimvNDjScjahQ" Name="Periodic"/>
+      <annotationvalue id="_NlRxMI9BEeimvNDjScjahQ" Name="Conditional"/>
+      <annotationvalue id="_Od6pYI9BEeimvNDjScjahQ" Name="NA"/>
+    </annotation>
+    <annotation xsi:type="Annotations:ExclusiveSettableAnnotation" id="_IERKQY9CEeiN3uMSM_ELLw" Name="Order">
+      <annotationvalue id="_L_kiMI9CEeiN3uMSM_ELLw" Name="Receive"/>
+      <annotationvalue id="_NXkP4I9CEeiN3uMSM_ELLw" Name="Timestamp"/>
+    </annotation>
+    <annotation xsi:type="Annotations:ExclusiveSettableAnnotation" id="_RRwNgo9CEeiN3uMSM_ELLw" Name="Transportation">
+      <annotationvalue id="_SGHpsI9CEeiN3uMSM_ELLw" Name="HLAreliable"/>
+      <annotationvalue id="_TdynQI9CEeiN3uMSM_ELLw" Name="HLAbestEffort"/>
+    </annotation>
+    <annotation xsi:type="Annotations:CombinedAnnotation" id="_zKMH854yEeieTJym-jlZmw" Name="Update" annotation="_PwKmUY8_EeimvNDjScjahQ _Pg8Mo49BEeimvNDjScjahQ"/>
+    <annotation xsi:type="Annotations:CombinedAnnotation" id="_8DMwA54yEeieTJym-jlZmw" Name="Distribution" annotation="_IERKQY9CEeiN3uMSM_ELLw _RRwNgo9CEeiN3uMSM_ELLw _ProkRI9CEeiN3uMSM_ELLw"/>
+  </annotationcontainer>
+  <annotationinterface id="_0J-CMI9FEeijo84HWAGaqg" Name="poRTIco_ObjectClass_AI" annotation="_nMO9oZ4xEeieTJym-jlZmw"/>
+  <annotationinterface id="_OZjUhI9GEeijo84HWAGaqg" Name="poRTIco_Parameter_AI" informationType="OperationParameter" annotation="_8DMwA54yEeieTJym-jlZmw"/>
+  <annotationinterface id="_5PcHNI9FEeijo84HWAGaqg" Name="poRTIco_Operation_AI" informationType="Operation" annotation="_nMO9oZ4xEeieTJym-jlZmw"/>
+  <annotationinterface id="_8yCrRI9FEeijo84HWAGaqg" Name="poRTIco_Data_AI" annotation="_8DMwA54yEeieTJym-jlZmw _zKMH854yEeieTJym-jlZmw __QluIo9BEeiN3uMSM_ELLw _nMO9oZ4xEeieTJym-jlZmw"/>
+  <mseserviceinterface id="_uZTnso_gEeidsK6u7bOs4Q" Name="Federation Management Functionality_RTI_Ambassador" managementservicefunction="_Fo2LEY_OEeidsK6u7bOs4Q _O0rBcY_OEeidsK6u7bOs4Q _TJY-8Y_OEeidsK6u7bOs4Q _qhwzkY_OEeidsK6u7bOs4Q _44_X0Y_OEeidsK6u7bOs4Q _FNnyMY_PEeidsK6u7bOs4Q _PT2bUY_PEeidsK6u7bOs4Q _XTGw4Y_PEeidsK6u7bOs4Q _gU3FQY_PEeidsK6u7bOs4Q _mZVJIY_PEeidsK6u7bOs4Q _ucpfUY_PEeidsK6u7bOs4Q _7W6WUY_PEeidsK6u7bOs4Q _IjTfIY_QEeidsK6u7bOs4Q _T-An4Y_QEeidsK6u7bOs4Q _nqn8cY_QEeidsK6u7bOs4Q _zxKQcY_QEeidsK6u7bOs4Q _2stbkY_QEeidsK6u7bOs4Q _5iqVAY_QEeidsK6u7bOs4Q _85GFUY_QEeidsK6u7bOs4Q _AfJmAY_REeidsK6u7bOs4Q _DV8M8Y_REeidsK6u7bOs4Q _IYrHAY_REeidsK6u7bOs4Q _MyHMcY_REeidsK6u7bOs4Q _QmVE8Y_REeidsK6u7bOs4Q _U42qEY_REeidsK6u7bOs4Q _bpl-EY_REeidsK6u7bOs4Q _g3pXUY_REeidsK6u7bOs4Q _nYpmMY_REeidsK6u7bOs4Q _veivQY_REeidsK6u7bOs4Q _1zXjUY_REeidsK6u7bOs4Q _78HDM4_REeidsK6u7bOs4Q"/>
+  <mseserviceinterface id="_h7aq8pChEeizmvAWlfhMkw" Name="Federation Management Functionality_FederateAmbassador" managementservicefunction="_TL70MZCgEeizmvAWlfhMkw _c9cKgZCgEeizmvAWlfhMkw _mye9AZCgEeizmvAWlfhMkw _fKG2YZCgEeizmvAWlfhMkw _qH6nwZCgEeizmvAWlfhMkw _xVjTIZCgEeizmvAWlfhMkw _DhPAcZChEeizmvAWlfhMkw _BjEDkZChEeizmvAWlfhMkw _GEGl0ZChEeizmvAWlfhMkw _0h7IgZCgEeizmvAWlfhMkw _7GxVkZCgEeizmvAWlfhMkw _cU8xsZChEeizmvAWlfhMkw _Qkh3oZChEeizmvAWlfhMkw _axxuwZChEeizmvAWlfhMkw _ftXfAZChEeizmvAWlfhMkw _TP88EZChEeizmvAWlfhMkw _NDCG0ZChEeizmvAWlfhMkw _IcpxkZChEeizmvAWlfhMkw"/>
+  <mseserviceinterface id="_kc6ako_hEeidsK6u7bOs4Q" Name="Declaration Management Functionality_RTI_Ambassador" managementservicefunction="_DbFWcY8zEeiJqJJeKaBsIw _V1EocY_WEeidsK6u7bOs4Q _TurUMY9IEeijo84HWAGaqg _ft5p0o9JEeijo84HWAGaqg _3QLBUo9JEeijo84HWAGaqg _KWX2Io9KEeijo84HWAGaqg _fxJQAY_WEeidsK6u7bOs4Q _t4uUUo9KEeijo84HWAGaqg _luyTIY_WEeidsK6u7bOs4Q _3208Mo9KEeijo84HWAGaqg _tZQEcY_WEeidsK6u7bOs4Q _Y--o0Y9LEeijo84HWAGaqg _tz2l8o9LEeijo84HWAGaqg _8KO1oY9LEeijo84HWAGaqg"/>
+  <mseserviceinterface id="_JV7tgpCiEeizmvAWlfhMkw" Name="Declaration Management Functionality_FederateAmbassador" managementservicefunction="_BEteMZCiEeizmvAWlfhMkw _EOboMZCiEeizmvAWlfhMkw _G0KUUZCiEeizmvAWlfhMkw _GRvjwZCiEeizmvAWlfhMkw"/>
+  <mseserviceinterface id="_2Ag0Mo_hEeidsK6u7bOs4Q" Name="Object Management Functionality_RTI_Ambassador" managementservicefunction="_A5ULwY_MEeidsK6u7bOs4Q _Hkr3kY_MEeidsK6u7bOs4Q _LdD3UY_MEeidsK6u7bOs4Q _RxxWoY_MEeidsK6u7bOs4Q _UrZPIY_MEeidsK6u7bOs4Q _alX6QY_MEeidsK6u7bOs4Q _he8aIY_MEeidsK6u7bOs4Q _nhDGgY_MEeidsK6u7bOs4Q _vhWk8Y_MEeidsK6u7bOs4Q _0r0esY_MEeidsK6u7bOs4Q _8M0yAY_MEeidsK6u7bOs4Q _CAR-YY_NEeidsK6u7bOs4Q _NIqBAY_NEeidsK6u7bOs4Q _So-2AY_NEeidsK6u7bOs4Q _XFEm0Y_NEeidsK6u7bOs4Q _bRlqkY_NEeidsK6u7bOs4Q _kloBwY_NEeidsK6u7bOs4Q _pEWP0Y_NEeidsK6u7bOs4Q _vMaaQY_NEeidsK6u7bOs4Q"/>
+  <mseserviceinterface id="_bJF7MpCkEeizmvAWlfhMkw" Name="Object Management Functionality_FederateAmbassador" managementservicefunction="_Xj2kwZCiEeizmvAWlfhMkw _RMy8EZCiEeizmvAWlfhMkw _i_apIZCiEeizmvAWlfhMkw _aLxCMZCiEeizmvAWlfhMkw _lbd00ZCiEeizmvAWlfhMkw _of_80ZCiEeizmvAWlfhMkw _zvWKIZCiEeizmvAWlfhMkw _5ou_YZCiEeizmvAWlfhMkw _-QGMEZCiEeizmvAWlfhMkw _KFgT0ZCjEeizmvAWlfhMkw _PltNAZCjEeizmvAWlfhMkw _v-bn0ZCjEeizmvAWlfhMkw _0gy_wZCjEeizmvAWlfhMkw _5PIXIZCjEeizmvAWlfhMkw _8mvMIZCjEeizmvAWlfhMkw _CGQI0ZCkEeizmvAWlfhMkw _D9rkgZCkEeizmvAWlfhMkw _E1VlQZCkEeizmvAWlfhMkw _PkJ4YZCkEeizmvAWlfhMkw _H8h_sZCkEeizmvAWlfhMkw _JoqxYZCkEeizmvAWlfhMkw _R1zx8ZCkEeizmvAWlfhMkw _Thq20ZCkEeizmvAWlfhMkw _UOjyAZCkEeizmvAWlfhMkw _VpLV4ZCkEeizmvAWlfhMkw"/>
+  <mseserviceinterface id="_S9rHEo_iEeidsK6u7bOs4Q" Name="Ownership Management Service Functionality_RTI_Ambassador" managementservicefunction="_lxT2YY9MEeijo84HWAGaqg _XdmDsY9NEeijo84HWAGaqg _eSZG8o--EeispuRj0H_YTw _GJ4Dso9OEeijo84HWAGaqg _haQEoo9OEeijo84HWAGaqg _8leq8o--EeispuRj0H_YTw _MI5Vgo-_EeispuRj0H_YTw _lIT1Uo9PEeijo84HWAGaqg _dEQDYo-_EeispuRj0H_YTw _jBNKAo-_EeispuRj0H_YTw _oP3AMo-_EeispuRj0H_YTw"/>
+  <mseserviceinterface id="_WRmLUpClEeizmvAWlfhMkw" Name="Ownership Management Service Functionality_FederateAmbassador" managementservicefunction="_znj1MZCkEeizmvAWlfhMkw _6qBLUZCkEeizmvAWlfhMkw _AE6GsZClEeizmvAWlfhMkw _BhmHIZClEeizmvAWlfhMkw _MAGGUZClEeizmvAWlfhMkw _OeGZ0ZClEeizmvAWlfhMkw _QbALYZClEeizmvAWlfhMkw _SkPIwZClEeizmvAWlfhMkw _UCOJsZClEeizmvAWlfhMkw"/>
+  <mseserviceinterface id="_FdbRko9HEeijo84HWAGaqg" Name="Time ManagementFunctionality_RTI_Ambassador" managementservicefunction="_EWJ8gY_AEeispuRj0H_YTw _NbV_Yo_AEeispuRj0H_YTw _QufyMo_AEeispuRj0H_YTw _YDxWoo_AEeispuRj0H_YTw _W89PEY89EeimvNDjScjahQ _kA8TQo_AEeispuRj0H_YTw _rN0wso_AEeispuRj0H_YTw _v8Hr0o_AEeispuRj0H_YTw _zsDhQo_AEeispuRj0H_YTw _4Lyb8Y_AEeispuRj0H_YTw _7eAaoo_AEeispuRj0H_YTw __ZPhIo_AEeispuRj0H_YTw _D8kiYo_BEeispuRj0H_YTw _G8Qmoo_BEeispuRj0H_YTw _KrlYEo_BEeispuRj0H_YTw _Qu17Ao_BEeispuRj0H_YTw _UjR18o_BEeispuRj0H_YTw _ZlLCgo_BEeispuRj0H_YTw _g2Qqgo_BEeispuRj0H_YTw"/>
+  <mseserviceinterface id="_ExhKUpCmEeizmvAWlfhMkw" Name="Time ManagementFunctionality_FederateAmbassador" managementservicefunction="_69z0kZClEeizmvAWlfhMkw _10ejQZClEeizmvAWlfhMkw _85NKQZClEeizmvAWlfhMkw __ISQ8ZClEeizmvAWlfhMkw"/>
+  <mseserviceinterface id="__ZVvUo_iEeidsK6u7bOs4Q" Name="Data Distribution Management_RTI_Ambassador" managementservicefunction="_uPYAsY_BEeispuRj0H_YTw _yGuswo_BEeispuRj0H_YTw _2KRaso_BEeispuRj0H_YTw _8diIgo_BEeispuRj0H_YTw _MfRGwo_CEeispuRj0H_YTw _aUo7Io_CEeispuRj0H_YTw _hdVcIo_CEeispuRj0H_YTw _WC_g8Y_cEeidsK6u7bOs4Q _o629oo_CEeispuRj0H_YTw _jFuXcY_cEeidsK6u7bOs4Q _p_hg0Y_cEeidsK6u7bOs4Q _7ROQ8o_CEeispuRj0H_YTw _EpQ-Yo_DEeispuRj0H_YTw _Nyz80o_DEeispuRj0H_YTw _bIXoso_DEeispuRj0H_YTw _nve6Mo_DEeispuRj0H_YTw _UsnucY_dEeidsK6u7bOs4Q _-mz3Qo_DEeispuRj0H_YTw"/>
+  <mseserviceinterface id="_ZXUUQo_jEeidsK6u7bOs4Q" Name="RTI Support Service Functionality_RTI_Ambassador" managementservicefunction="_SIDg8Y_SEeidsK6u7bOs4Q _XCIOQY_SEeidsK6u7bOs4Q _aERwoY_SEeidsK6u7bOs4Q _cwAXEY_SEeidsK6u7bOs4Q _hJp34Y_SEeidsK6u7bOs4Q _lX6oEY_SEeidsK6u7bOs4Q _oCSjoY_SEeidsK6u7bOs4Q _rHKp4Y_SEeidsK6u7bOs4Q _tvL1AY_SEeidsK6u7bOs4Q _yu8TkY_SEeidsK6u7bOs4Q _2Ew_4Y_SEeidsK6u7bOs4Q _8OsykY_SEeidsK6u7bOs4Q _ADONEY_TEeidsK6u7bOs4Q _GAAUkY_TEeidsK6u7bOs4Q _Iw_OcY_TEeidsK6u7bOs4Q _L6wbwY_TEeidsK6u7bOs4Q _PRpfEY_TEeidsK6u7bOs4Q _TtzhUY_TEeidsK6u7bOs4Q _Wmm6cY_TEeidsK6u7bOs4Q _Ys5RgY_TEeidsK6u7bOs4Q _cpb_kY_TEeidsK6u7bOs4Q _fHbE8Y_TEeidsK6u7bOs4Q _kTxOAY_TEeidsK6u7bOs4Q _oGIsYY_TEeidsK6u7bOs4Q _qliuEY_TEeidsK6u7bOs4Q _tiMscY_TEeidsK6u7bOs4Q _wL55oY_TEeidsK6u7bOs4Q _0-CL4Y_TEeidsK6u7bOs4Q _7VWTQY_TEeidsK6u7bOs4Q _C46LUY_UEeidsK6u7bOs4Q _FMia0Y_UEeidsK6u7bOs4Q _Hvs7IY_UEeidsK6u7bOs4Q _MKRpAY_UEeidsK6u7bOs4Q _QEc_kY_UEeidsK6u7bOs4Q _UBZWQY_UEeidsK6u7bOs4Q _X5lv0Y_UEeidsK6u7bOs4Q _eTAI8Y_UEeidsK6u7bOs4Q _jV0ikY_UEeidsK6u7bOs4Q _nTTEwY_UEeidsK6u7bOs4Q _rPMSkY_UEeidsK6u7bOs4Q _usPBMY_UEeidsK6u7bOs4Q _zu97QY_UEeidsK6u7bOs4Q _4oBU4Y_UEeidsK6u7bOs4Q"/>
+  <mseserviceinterface id="_M68dso_kEeidsK6u7bOs4Q" Name="poRTIco API-specific functionality_RTI_Ambassador" managementservicefunction="_-02DgY_UEeidsK6u7bOs4Q _Bzg0EY_VEeidsK6u7bOs4Q _EEfYMY_VEeidsK6u7bOs4Q _FXreYY_VEeidsK6u7bOs4Q _Gqd78Y_VEeidsK6u7bOs4Q _HwTioY_VEeidsK6u7bOs4Q _I7DegY_VEeidsK6u7bOs4Q _J-sFwY_VEeidsK6u7bOs4Q _L_b1gY_VEeidsK6u7bOs4Q _M-_1EY_VEeidsK6u7bOs4Q _N8CsIY_VEeidsK6u7bOs4Q _O7yR4Y_VEeidsK6u7bOs4Q _QPfVcY_VEeidsK6u7bOs4Q _RZnmQY_VEeidsK6u7bOs4Q _SQ8P0Y_VEeidsK6u7bOs4Q _UkXrAY_VEeidsK6u7bOs4Q _VzGH8Y_VEeidsK6u7bOs4Q"/>
+  <exceptioncontainer id="_eNi2RZ4vEeikAr5yuWcDIg" Name="poRTIco_EC" semantics="provides all exceptions of the poRTIco RTI">
+    <exception id="_e44C8I8gEeicG57COrH0bg" Name="AlreadyConnected" message=""/>
+    <exception id="_h_oYgI8gEeicG57COrH0bg" Name="AsynchronousDeliveryAlreadyDisabled"/>
+    <exception id="_jpYkkI8gEeicG57COrH0bg" Name="AsynchronousDeliveryAlreadyEnabled"/>
+    <exception id="_lSMVcI8gEeicG57COrH0bg" Name="AttributeAcquisitionWasNotRequested"/>
+    <exception id="_oEs5UI8gEeicG57COrH0bg" Name="AttributeAlreadyBeingAcquired" message=""/>
+    <exception id="_pFlukI8gEeicG57COrH0bg" Name="AttributeAlreadyBeingChanged"/>
+    <exception id="_rSRokI8gEeicG57COrH0bg" Name="AttributeAlreadyBeingDivested"/>
+    <exception id="_s0HOwI8gEeicG57COrH0bg" Name="AttributeAlreadyOwned"/>
+    <exception id="_ueGEUI8gEeicG57COrH0bg" Name="AttributeDivestitureWasNotRequested"/>
+    <exception id="_xUvhUI8gEeicG57COrH0bg" Name="AttributeNotDefined"/>
+    <exception id="_zIvOgI8gEeicG57COrH0bg" Name="AttributeNotOwned"/>
+    <exception id="_z7XlUI8gEeicG57COrH0bg" Name="AttributeNotPublished"/>
+    <exception id="_2TU7MI8gEeicG57COrH0bg" Name="AttributeNotRecognized"/>
+    <exception id="_4PY_QI8gEeicG57COrH0bg" Name="AttributeNotSubscribed"/>
+    <exception id="_7i5-cI8gEeicG57COrH0bg" Name="AttributeRelevanceAdvisorySwitchIsOff"/>
+    <exception id="_9JI8cI8gEeicG57COrH0bg" Name="AttributeRelevanceAdvisorySwitchIsOn " message=""/>
+    <exception id="__UCGsI8gEeicG57COrH0bg" Name="AttributeScopeAdvisorySwitchIsOff"/>
+    <exception id="_AwKtgI8hEeicG57COrH0bg" Name="AttributeScopeAdvisorySwitchIsOn"/>
+    <exception id="_CoKw8I8hEeicG57COrH0bg" Name="CallNotAllowedFromWithinCallback"/>
+    <exception id="_EkWJwI8hEeicG57COrH0bg" Name="ConnectionFailed"/>
+    <exception id="_F0aqgI8hEeicG57COrH0bg" Name="CouldNotCreateLogicalTimeFactory"/>
+    <exception id="_HOLSwI8hEeicG57COrH0bg" Name="CouldNotDecode"/>
+    <exception id="_KSv3AI8hEeicG57COrH0bg" Name="CouldNotEncode"/>
+    <exception id="_LqUG4I8hEeicG57COrH0bg" Name="CouldNotOpenFDD"/>
+    <exception id="_NXpLYI8hEeicG57COrH0bg" Name="CouldNotOpenMIM"/>
+    <exception id="_PiLwUI8hEeicG57COrH0bg" Name="DeletePrivilegeNotHeld"/>
+    <exception id="_RKhAEI8hEeicG57COrH0bg" Name="DesignatorIsHLAstandardMIM"/>
+    <exception id="_S44mYI8hEeicG57COrH0bg" Name="ErrorReadingFDD"/>
+    <exception id="_ULhS8I8hEeicG57COrH0bg" Name="ErrorReadingMIM"/>
+    <exception id="_WryQQI8hEeicG57COrH0bg" Name="FederateAlreadyExecutionMember"/>
+    <exception id="_YIJgkI8hEeicG57COrH0bg" Name="FederateHandleNotKnown"/>
+    <exception id="_ZTVhUI8hEeicG57COrH0bg" Name="FederateHasNotBegunSave"/>
+    <exception id="_akWdQI8hEeicG57COrH0bg" Name="FederateInternalError" semantics=""/>
+    <exception id="_bTeNEI8hEeicG57COrH0bg" Name="FederateIsExecutionMember"/>
+    <exception id="_cj7IUI8hEeicG57COrH0bg" Name="FederateNameAlreadyInUse"/>
+    <exception id="_d6ddcI8hEeicG57COrH0bg" Name="FederateNotExecutionMember"/>
+    <exception id="_fi4MwI8hEeicG57COrH0bg" Name="FederateOwnsAttributes"/>
+    <exception id="_guMwYI8hEeicG57COrH0bg" Name="FederatesCurrentlyJoined"/>
+    <exception id="_iVgscI8hEeicG57COrH0bg" Name="FederateServiceInvocationsAreBeingReportedViaMOM"/>
+    <exception id="_jqx2QI8hEeicG57COrH0bg" Name="FederateUnableToUseTime"/>
+    <exception id="_k-uxcI8hEeicG57COrH0bg" Name="FederationExecutionAlreadyExists"/>
+    <exception id="_mOQfoI8hEeicG57COrH0bg" Name="FederationExecutionDoesNotExist"/>
+    <exception id="_ngBpgI8hEeicG57COrH0bg" Name="IllegalName"/>
+    <exception id="_o4aYwI8hEeicG57COrH0bg" Name="IllegalTimeArithmetic"/>
+    <exception id="_rt-3sI8hEeicG57COrH0bg" Name="InconsistentFDD" semantics=""/>
+    <exception id="_sh_HgI8hEeicG57COrH0bg" Name="InteractionClassAlreadyBeingChanged"/>
+    <exception id="_ulbl8I8hEeicG57COrH0bg" Name="InteractionClassNotDefined"/>
+    <exception id="_vzTHQI8hEeicG57COrH0bg" Name="InteractionClassNotPublished"/>
+    <exception id="_w8xQwI8hEeicG57COrH0bg" Name="InteractionParameterNotDefined"/>
+    <exception id="_yQQ48I8hEeicG57COrH0bg" Name="InteractionRelevanceAdvisorySwitchIsOff"/>
+    <exception id="_zbwbsI8hEeicG57COrH0bg" Name="InteractionRelevanceAdvisorySwitchIsOn"/>
+    <exception id="_05ZeYI8hEeicG57COrH0bg" Name="InTimeAdvancingState"/>
+    <exception id="_2GqiwI8hEeicG57COrH0bg" Name="InvalidAttributeHandle"/>
+    <exception id="_3MAaMI8hEeicG57COrH0bg" Name="InvalidDimensionHandle"/>
+    <exception id="_4Z-CII8hEeicG57COrH0bg" Name="InvalidFederateHandle"/>
+    <exception id="_5sRXgI8hEeicG57COrH0bg" Name="InvalidInteractionClassHandle" message=""/>
+    <exception id="_69zQ0I8hEeicG57COrH0bg" Name="InvalidLocalSettingsDesignator"/>
+    <exception id="_8ZnHgI8hEeicG57COrH0bg" Name="InvalidLogicalTime"/>
+    <exception id="_-LPdMI8hEeicG57COrH0bg" Name="InvalidLogicalTimeInterval "/>
+    <exception id="__gBe0I8hEeicG57COrH0bg" Name="InvalidLookahead"/>
+    <exception id="_A_cqMI8iEeicG57COrH0bg" Name="InvalidMessageRetractionHandle"/>
+    <exception id="_CiULIY8iEeicG57COrH0bg" Name="InvalidObjectClassHandle"/>
+    <exception id="_DtHKUI8iEeicG57COrH0bg" Name="InvalidOrderName"/>
+    <exception id="_FaeEAI8iEeicG57COrH0bg" Name="InvalidOrderType"/>
+    <exception id="_G2sKYI8iEeicG57COrH0bg" Name="InvalidParameterHandle"/>
+    <exception id="_H_BrcI8iEeicG57COrH0bg" Name="InvalidRangeBound"/>
+    <exception id="_JNPyEI8iEeicG57COrH0bg" Name="InvalidRegion"/>
+    <exception id="_KeQuAI8iEeicG57COrH0bg" Name="InvalidRegionContext"/>
+    <exception id="_LqScQI8iEeicG57COrH0bg" Name="InvalidResignAction"/>
+    <exception id="_NpR4gI8iEeicG57COrH0bg" Name="InvalidServiceGroup"/>
+    <exception id="_PkavgY8iEeicG57COrH0bg" Name="InvalidTransportationName"/>
+    <exception id="_RkvBcI8iEeicG57COrH0bg" Name="InvalidTransportationType"/>
+    <exception id="_TKmzEI8iEeicG57COrH0bg" Name="InvalidUpdateRateDesignator"/>
+    <exception id="_VGOyQI8iEeicG57COrH0bg" Name="LogicalTimeAlreadyPassed"/>
+    <exception id="_WyrtAI8iEeicG57COrH0bg" Name="MessageCanNoLongerBeRetracted"/>
+    <exception id="_Y8VhII8iEeicG57COrH0bg" Name="NameNotFound" semantics=""/>
+    <exception id="_ZqAfcI8iEeicG57COrH0bg" Name="NameSetWasEmpty" semantics=""/>
+    <exception id="_bGedcI8iEeicG57COrH0bg" Name="NoAcquisitionPending"/>
+    <exception id="_dinvwI8iEeicG57COrH0bg" Name="NoRequestToEnableTimeConstrainedWasPending"/>
+    <exception id="_fjA6MI8iEeicG57COrH0bg" Name="NoRequestToEnableTimeRegulationWasPending"/>
+    <exception id="_goulEI8iEeicG57COrH0bg" Name="NotConnected"/>
+    <exception id="_hyfCcI8iEeicG57COrH0bg" Name="ObjectClassNotDefined"/>
+    <exception id="_jOiJsI8iEeicG57COrH0bg" Name="ObjectClassNotPublished"/>
+    <exception id="_lOiSkI8iEeicG57COrH0bg" Name="ObjectClassRelevanceAdvisorySwitchIsOff "/>
+    <exception id="_nhkFII8iEeicG57COrH0bg" Name="ObjectClassRelevanceAdvisorySwitchIsOn"/>
+    <exception id="_o64BcI8iEeicG57COrH0bg" Name="ObjectInstanceNameInUse"/>
+    <exception id="_qWuUYI8iEeicG57COrH0bg" Name="ObjectInstanceNameNotReserved"/>
+    <exception id="_rh7jQI8iEeicG57COrH0bg" Name="ObjectInstanceNotKnown" semantics=""/>
+    <exception id="_s4zPkI8iEeicG57COrH0bg" Name="OwnershipAcquisitionPending"/>
+    <exception id="_uD1fUI8iEeicG57COrH0bg" Name="RegionDoesNotContainSpecifiedDimension"/>
+    <exception id="_vVzdgI8iEeicG57COrH0bg" Name="RegionInUseForUpdateOrSubscription"/>
+    <exception id="_w0WfII8iEeicG57COrH0bg" Name="RegionNotCreatedByThisFederate"/>
+    <exception id="_y5HzQI8iEeicG57COrH0bg" Name="RequestForTimeConstrainedPending"/>
+    <exception id="_1pZigI8iEeicG57COrH0bg" Name="RequestForTimeRegulationPending"/>
+    <exception id="_3C66MI8iEeicG57COrH0bg" Name="RestoreInProgress"/>
+    <exception id="_4PVqAI8iEeicG57COrH0bg" Name="RestoreNotInProgress"/>
+    <exception id="_6c7i8I8iEeicG57COrH0bg" Name="RestoreNotRequested" semantics=""/>
+    <exception id="_74Y0UI8iEeicG57COrH0bg" Name="RTIexception"/>
+    <exception id="_9Jgd8I8iEeicG57COrH0bg" Name="RTIinternalError"/>
+    <exception id="_-cfIwI8iEeicG57COrH0bg" Name="SaveInProgress"/>
+    <exception id="__4PVEI8iEeicG57COrH0bg" Name="SaveNotInitiated"/>
+    <exception id="_BccSwI8jEeicG57COrH0bg" Name="SaveNotInProgress"/>
+    <exception id="_CxSl0I8jEeicG57COrH0bg" Name="SynchronizationPointLabelNotAnnounced"/>
+    <exception id="_EZBYoI8jEeicG57COrH0bg" Name="TimeConstrainedAlreadyEnabled"/>
+    <exception id="_FeVa4I8jEeicG57COrH0bg" Name="TimeConstrainedIsNotEnabled"/>
+    <exception id="_GqfE8I8jEeicG57COrH0bg" Name="TimeRegulationAlreadyEnabled" message=""/>
+    <exception id="_H9j2YI8jEeicG57COrH0bg" Name="TimeRegulationIsNotEnabled"/>
+    <exception id="_JdHkoI8jEeicG57COrH0bg" Name="UnableToPerformSave"/>
+    <exception id="_Kx0twI8jEeicG57COrH0bg" Name="UnknownName" message=""/>
+    <exception id="_MDtzcI8jEeicG57COrH0bg" Name="UnsupportedCallbackModel"/>
+    <exception id="_N0yTMI9JEeijo84HWAGaqg" Name="ConcurrentAccessAttemted"/>
+    <exception id="_P2lg8I9LEeijo84HWAGaqg" Name="ObjectClassNotSubscribed"/>
+    <exception id="_kXv34I9LEeijo84HWAGaqg" Name="FederateLoggingServiceCalls"/>
+    <exception id="_CSrlII9NEeijo84HWAGaqg" Name="ObjectNotKown"/>
+    <exception id="_W49asI9PEeijo84HWAGaqg" Name="FederateWasNotAskedToReleaseAttribute" message=""/>
+  </exceptioncontainer>
+</ModularEnvironment:Coordinator>
